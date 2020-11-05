@@ -44,10 +44,10 @@ Pour chaque expression, dites quelle fonction elle remplit au niveau binaire. Ex
 
 
 ## Ternaire
+Exemple : `res = a>b ? 12 : 34` 
 1.  Écrire une expression où a=12 si b est pair sinon a=0
 1.  Écrire une expression où res=1 si le bit #3 de b égal 1 sinon res=0
 1.  Ecrire une expression où res=true si b est un multiple de 27 sinon b=false
-
 
 ## Boucle (utiliser opérateur `++` et `--`)
 
