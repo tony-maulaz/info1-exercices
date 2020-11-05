@@ -186,3 +186,73 @@ Exemple d'affichage
 ...
 89 - 89
 ```
+
+## Affichage
+
+Remplir les `printf` suivant pour respecter l'affichage
+
+### Affichage 1
+```C
+double a=1.00, b=1000.00
+printf(...);
+printf(...);
+```
+
+```BASH
+|    1.00
+| 1000.00  
+```
+
+### Affichage 2
+
+```C
+int a=1000, b=25
+printf(...);
+printf(...);
+```
+
+```BASH
+val1     = 1000
+valeur 2 = 25  
+```
+
+### Affichage 3
+
+```C
+int a=1000, b=25
+printf(...);
+printf(...);
+```
+
+```BASH
+val1     = 1000
+valeur 2 =   25  
+```
+
+### Affichage 4
+
+```C
+double a=0.001, b=100.4
+printf(...);
+printf(...);
+```
+
+```BASH
+val1 =       0.001
+valeur 2 = 100.4  
+```
+
+### Affichage 5
+
+```C
+double a=-12, b=100.123, c=-4.5
+printf(...);
+printf(...);
+printf(...);
+```
+
+```BASH
+| -12
+| 100.123 
+|  -4.5 
+```
