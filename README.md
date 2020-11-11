@@ -53,7 +53,7 @@ Exemple : `res = a>b ? 12 : 34`
 
 1.  Faire une boucle `while` qui affiche les nombre de 23 à 56 séparé par `-` sans afficher la quarantaine. 40, 41..49
 
-2.  Faire une boucle `for` qui affiche les nombres de 10 à ~0 par intervalle de 3
+2.  Faire une boucle `for` qui affiche les nombres de 10 à 1 par intervalle de 3
 
 3.  Faire `UNE` boucle qui affiche les nombres de 0 à 10 et de 10 à 0 en affichant une seule fois le 10
 
