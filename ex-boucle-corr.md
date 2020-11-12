@@ -108,7 +108,7 @@ Cons = f
 ```
 
 ```C
-    for (char c = 'a'; c < 'z'; c++)
+    for (char c = 'a'; c <= 'z'; c++)
     {
         switch (c)
         {
