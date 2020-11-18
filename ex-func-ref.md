@@ -132,6 +132,13 @@ Est-ce que l'expression suivante est correcte :
 test(2.3, 5);
 ```
 
+### Ex 2.2
+Quel est le risque avec le code suivant :
+```c
+double* link;
+link = 300;
+*link = 34.5;
+```
 
 ## Solutions
 ```BASH
@@ -154,19 +161,22 @@ Q13 res=8
 
 ## Solutions Ex 2
 ```console
-ex2 q1 = 5.0                                                                                                                        
-char1 = a                                                                                                                                      
-char2 = z                                                                                                                                      
-char3 = u                                                                                                                                      
-Ex 2 q2 = true                                                                                                                                 
-Ex 2 q3 = true                                                                                                                                 
-Ex 2 q4 = false                                                                                                                                
-ex 2 q5 = u                                                                                                                                    
-ex 2 q6 = u  
-ex 2 q7 = u  
+ex2 q1 = 5.0
+char1 = a
+char2 = z
+char3 = u
+Ex 2 q2 = true
+Ex 2 q3 = true
+Ex 2 q4 = false
+ex 2 q5 = u
+ex 2 q6 = u
+ex 2 q7 = u
 ```
 
 ### Ex 2.1
 
 Non, on ne peut pas passer l'adresse d'une constante car la valeur n'est pas modifiable
 
+### Ex 2.2
+
+On écrase une valeur dans la mémoire du système alors que l'on ne sait pas à quoi correspond l'adresse `300`
