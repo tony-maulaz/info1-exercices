@@ -82,8 +82,55 @@ int main(int argc, char *argv[])
 }
 ```
 
+## Ex 2
+```C
+void test(double* v1, int v2){
+    *v1 = v2;
+}
 
+void main(){
+    double d = 1.2;
+    char c = 'a';
+    int i;
+    
+    test(&d, 5);
+    printf("ex2 q1 = %lf\n", d);
+    
+    char* lc = &c;
+    printf("char1 = %c\n", c);
+    *lc = 'z';
+    printf("char2 = %c\n", c);
+    c = 'u';
+    printf("char3 = %c\n", *lc);
+    
+    if( *lc == c )
+        printf("Ex 2 q2 = true\n");
+    else
+        printf("Ex 2 q2 = false\n");
+        
+    if( lc == &c )
+        printf("Ex 2 q3 = true\n");
+    else
+        printf("Ex 2 q3 = false\n");
+        
+    if( &lc == &c )
+        printf("Ex 2 q4 = true\n");
+    else
+        printf("Ex 2 q4 = false\n");
 
+    printf("ex 2 q5 = %c\n", c);    
+    lc = 'u';
+    printf("ex 2 q6 = %c\n", c);
+    *lc = 'e';
+    printf("ex 2 q7 = %c\n", c);
+}
+```
+
+### Ex 2.1
+Est-ce que l'expression suivante est correcte :
+```c
+test(2.3, 5);
+```
 
 
 ## Solutions
@@ -104,3 +151,22 @@ Q11 i1=4
 Q12 d1=4.500000
 Q13 res=8
 ```
+
+## Solutions Ex 2
+```console
+ex2 q1 = 5.0                                                                                                                        
+char1 = a                                                                                                                                      
+char2 = z                                                                                                                                      
+char3 = u                                                                                                                                      
+Ex 2 q2 = true                                                                                                                                 
+Ex 2 q3 = true                                                                                                                                 
+Ex 2 q4 = false                                                                                                                                
+ex 2 q5 = u                                                                                                                                    
+ex 2 q6 = u  
+ex 2 q7 = u  
+```
+
+### Ex 2.1
+
+Non, on ne peut pas passer l'adresse d'une constante car la valeur n'est pas modifiable
+
