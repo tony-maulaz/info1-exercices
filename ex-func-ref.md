@@ -119,7 +119,7 @@ void main(){
         printf("Ex 2 q4 = false\n");
 
     printf("ex 2 q5 = %c\n", c);    
-    lc = 'u';
+    lc = 'z';
     printf("ex 2 q6 = %c\n", c);
     *lc = 'e';
     printf("ex 2 q7 = %c\n", c);
