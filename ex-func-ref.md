@@ -24,10 +24,10 @@ int func4(int* i, double* d){
 
 void saisie(char * txt){
     int ret;
-    int i1, i2;
+    int v1, v2;
     do{
         printf(txt);
-        ret = scanf("%d,%d", &i1, &i2);
+        ret = scanf("%d,%d", &v1, &v2);
         while(getchar() != '\n'){}
     }while(ret != 2);
     // ...
@@ -75,10 +75,10 @@ int main(int argc, char *argv[])
     // i1=2, i2=6, i3=12
 
     // Complèter la fonction saisie() pour que le programme affiche les 2 
-    // caractères saisis par l'utilisateur
-    char c1, c2;
+    // entier saisis par l'utilisateur
+    int i1, i2;
     saisie("Entrer 2 entiers séparés par une ,\n");
-    printf("C1 = %c\nC2 = %c\n", c1, c2);
+    printf("I1 = %d\nI2 = %d\n", i1, i2);
 }
 ```
 
@@ -157,6 +157,52 @@ Q10 = 3
 Q11 i1=4
 Q12 d1=4.500000
 Q13 res=8
+```
+
+### Fonction tri
+```c
+void swap(int* i1, int* i2){
+    int tmp = *i1;
+    *i1 = *i2;
+    *i2 = tmp;
+}
+
+void tri(int* i1, int* i2, int* i3){
+    if( *i1 > *i2) swap(i1, i2);
+    if( *i1 > *i3) swap(i1, i3);
+    if( *i2 > *i3) swap(i2, i3);
+}
+
+int main(int argc, char* argv[])
+{
+
+    int i1=1, i2=3, i3=2;
+    tri(&i1, &i2, &i3);
+    printf("i1=%d  i2=%d  i3=%d\n", i1, i2, i3);
+}
+```
+
+### Saisie
+```c
+void saisie(char * txt, char* c1, char* c2){
+    int ret;
+    int v1, v2;
+    do{
+        printf(txt);
+        ret = scanf("%d,%d", &v1, &v2);
+        while(getchar() != '\n'){}
+    }while(ret != 2);
+
+    *c1 = v1;
+    *c2 = v2;
+}
+
+int main(int argc, char* argv[])
+{
+    int i1, i2;
+    saisie("Entrer 2 entiers séparés par une ,\n", &i1, &i2);
+    printf("I1 = %d\nI2 = %d\n", i1, i2);
+}
 ```
 
 ## Solutions Ex 2
