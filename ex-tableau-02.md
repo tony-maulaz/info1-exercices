@@ -50,23 +50,11 @@ tab[2] = 0.0;
 
 ## Ex 6
 
+Dans la fonction `copy` de l'exercice 2 :
+
 - 6.1 : Pourquoi le premier `const` est important dans la fonction ci-dessous ?
 - 6.2 : Pourquoi est-ce que l'on a pas besoin de mettre un `const` avec le dernier paramètre `int` ?
 
-```c
-void copy(const int c[], int c1[], int size){
-    for(int i=0; i<size; i++){
-        c1[i] = c[i];
-    }
-}
-
-int main(int argc, char* argv[])
-{
-    int c[] = {1,2,3,4,5};
-    int c1[5] = {0};
-    copy(c, c1, 3);
-}
-```
 
 # Solutions
 
