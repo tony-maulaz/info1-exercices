@@ -32,6 +32,12 @@ Les valeurs de l'ex 1 doivent être mise dans le tableau lors de la déclaration
 
 ## Ex 3
 
+Pour le tableau suivant, les valeurs sont `1 2`
+
+```c
+int a[] = {1,2};
+```
+
 Quelles sont les valeurs du tableau suivant :
 
 ```c
