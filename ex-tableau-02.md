@@ -2,7 +2,7 @@
 
 ## Ex 1
 
-Est-ce que l'opération ci-desssous est valide ?
+Est-ce que l'opération ci-dessous est valide ?
 
 ```c
 char c[] = {1,2,3};
@@ -53,7 +53,7 @@ tab[2] = 0.0;
 Dans la fonction `copy` de l'exercice 2 :
 
 - 6.1 : Pourquoi le premier `const` est important dans la fonction ci-dessous ?
-- 6.2 : Pourquoi est-ce que l'on a pas besoin de mettre un `const` avec le dernier paramètre `int` ?
+- 6.2 : Pourquoi est-ce que l’on n’a pas besoin de mettre un `const` avec le dernier paramètre `int` ?
 
 
 # Solutions
@@ -81,7 +81,7 @@ int main(int argc, char* argv[])
 
 ## Ex 3
 
-Si le paramètre ssize est plus grand que la taille du tableau.
+Si le paramètre `size` est plus grand que la taille du tableau.
 
 ## Ex 4
 
