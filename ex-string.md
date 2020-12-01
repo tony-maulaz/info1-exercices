@@ -122,6 +122,17 @@ int main(int argc, char* argv[])
     return RETURN_OK;
 }
 ```
+### Ex 3.4
+
+Dans le code ci-dessus, pourquoi est-ce qu'il faut faire le contrôle suivant : `if( text1[TAB_SIZE]-1 != '\n' )`
+et que l'on ne peut pas simplement vider le buffer comme avec un
+`scanf` ?
+
+```c
+if( text1[TAB_SIZE]-1 != '\n' ){
+    while (getchar() != '\n'){}
+}
+```
 
 ## Ex 4
 
