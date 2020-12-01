@@ -48,8 +48,84 @@ int main(void)
 ```
 
 ## Ex 3
-
 ### Ex 3.1
+
+Quel est l'affichage du programme suivant avec cette entrée :
+
+```console
+123
+abc
+```
+
+### Ex 3.2
+
+Refaire la même chose avec l'entrée suivante
+
+```console
+12345
+abc
+```
+
+```c
+#define RETURN_OK 0
+#define TAB_SIZE 5
+
+int main(int argc, char* argv[])
+{
+    char text1[TAB_SIZE];
+    char text2[TAB_SIZE];
+
+    printf("%-8s : ", "Entrée 1 : ");
+    fgets(text1, TAB_SIZE, stdin);
+
+    printf("%-8s : ", "Entrée 2 : ");
+    fgets(text2, TAB_SIZE, stdin);
+
+    printf("\n\n");
+
+    puts(text1);
+    puts(text2);
+
+    return RETURN_OK;
+}
+```
+
+### Ex 3.3
+
+Idem que pour Ex 3.2
+
+
+```c
+#define RETURN_OK 0
+#define TAB_SIZE 5
+
+int main(int argc, char* argv[])
+{
+    char text1[TAB_SIZE];
+    char text2[TAB_SIZE];
+
+    printf("%-8s : ", "Entrée 1 : ");
+    fgets(text1, TAB_SIZE, stdin);
+
+    if( text1[TAB_SIZE]-1 != '\n' ){
+        while (getchar() != '\n'){}
+    }
+
+    printf("%-8s : ", "Entrée 2 : ");
+    fgets(text2, TAB_SIZE, stdin);
+
+    printf("\n\n");
+    
+    puts(text1);
+    puts(text2);
+
+    return RETURN_OK;
+}
+```
+
+## Ex 4
+
+### Ex 4.1
 
 Ecrire un programme qui demande à l'utilisateur de saisir son nom et son prénom.
 
@@ -57,11 +133,11 @@ Attention il peut y avoir des espaces dans le nom ou dans le prénom et les maju
 
 Les deux données sont stockées dans des variables.
 
-### Ex 3.2
+### Ex 4.2
 
 Ecrire une fonction qui transforme une chaîne de caractère en majuscule.
 
-### Ex 3.3
+### Ex 4.3
 
 Faire une fonction qui prend une chaine de caractère en entrée. 
 
@@ -73,7 +149,7 @@ longueur de la chaine à afficher (le format du printf).
 ```console
 La chaîne : 9
 ```
-### 3.4
+### 4.4
 
 Avec les précédant exercices, écrire un programme qui :
 
@@ -107,7 +183,41 @@ strlen 4 = 1
 fait une première fois le parcours de la chaîne pour calculer la longueur et ensuite
 il y a une deuxième boucle.
 
-## Ex 3
+## Ex 3.1
+
+Il y a une ligne vide entre les deux lignes car le `\n` n'a pas été supprimé
+
+```console
+Entrée 1 :  : abc
+Entrée 2 :  : 123
+
+abc
+
+123
+```
+
+## Ex 3.2
+
+```console
+Entrée 1 :  : 12345
+Entrée 2 :  : 
+
+1234
+5
+```
+
+## Ex 3.3
+```console
+Entrée 1 :  : 12345
+Entrée 2 :  : abc
+
+
+1234
+abc
+```
+
+
+## Ex 4
 
 ```c
 void string_to_upper(char txt[])
