@@ -57,15 +57,6 @@ Quel est l'affichage du programme suivant avec cette entrée :
 abc
 ```
 
-### Ex 3.2
-
-Refaire la même chose avec l'entrée suivante
-
-```console
-12345
-abc
-```
-
 ```c
 #define RETURN_OK 0
 #define TAB_SIZE 5
@@ -90,9 +81,18 @@ int main(int argc, char* argv[])
 }
 ```
 
+### Ex 3.2
+
+Refaire la même chose avec l'entrée suivante
+
+```console
+12345
+abc
+```
+
 ### Ex 3.3
 
-Idem que pour Ex 3.2
+Idem que pour Ex 3.2 mais avec le code ci-dessous
 
 
 ```c
@@ -147,6 +147,8 @@ Les deux données sont stockées dans des variables.
 ### Ex 4.2
 
 Ecrire une fonction qui transforme une chaîne de caractère en majuscule.
+
+**Vous ne devez pas utiliser la fonction `toupper`**. Vous devez écrire votre propre fonction.
 
 ### Ex 4.3
 
