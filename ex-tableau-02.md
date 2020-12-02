@@ -1,5 +1,28 @@
 # Tableau avancé
 
+## Ex 0
+
+Dans le programme suivant, le but est d'utiliser la fonction `swap` pour intervertir les valeurs du 
+tableau `meas`
+
+```c
+void swap(int* val1, int* val2){
+    const int tmp = *val1;
+    *val1 = *val2;
+    *val2 = tmp;
+}
+
+int main(){
+    int meas[2] = {1,2};
+    swap(...);
+    printf("Ind 0 : %d\n", ...);
+    printf("Ind 1 : %d\n", ...);
+    return 0;
+}
+```
+
+Remplacer les `...` pour faire l'appelle à la fonction et l'affichage des valeurs
+
 ## Ex 1
 
 Est-ce que l'opération ci-dessous est valide ?
@@ -57,6 +80,25 @@ Dans la fonction `copy` de l'exercice 2 :
 
 
 # Solutions
+
+
+## Ex 0
+
+```c
+void swap(int* val1, int* val2){
+    const int tmp = *val1;
+    *val1 = *val2;
+    *val2 = tmp;
+}
+
+int main(){
+    int meas[2] = {1,2};
+    swap(&meas[0], &meas[1]);
+    printf("Ind 0 : %d\n", meas[0]);
+    printf("Ind 1 : %d\n", meas[1]);
+    return 0;
+}
+```
 
 ## Ex 1
 
