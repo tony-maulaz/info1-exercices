@@ -199,6 +199,8 @@ Faire un programme qui demande à l'utilisateur de saisir une chaine de caractè
 
 Compter le nombre d'occurrence pour chaque caractères de la table ASCII.
 
+Les caractères qui ne sont pas dans la table ASCII ne sont pas pris en compte.
+
 Afficher le nombre d'occurrence de chaque caractère, si il y est présent au moins une fois.
 
 La chaîne peut contenir au maximun 80 caratères.
