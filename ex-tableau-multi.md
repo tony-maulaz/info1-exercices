@@ -91,16 +91,18 @@ double point[3][2] = {
 };
 ```
 
-En Considérant que la première valeur de `point` est `x` et que la deuxième est `y`
+En Considérant que la première valeur pour un `point` est `x` et que la deuxième est `y`
 
 ```console
 point[][0] => x
 point[][1] => y
 ```
 
-Ecrire une fonction qui permet de lire les valeurs de `x` et `y` dans un point.
+Ecrire une fonction qui permet de lire les valeurs de `x` et `y` d'un point et de les mettre
+dans deux variables.
 
-On va donc passer à cette fonction en paramètre le `tableau`, `x` et `y`
+On va donc passer à cette fonction en paramètre le `tableau` et les deux variables `x` et `y`
+dans lesquels on va stocker l'information.
 
 Il faut compléter le code ci-dessous
 
@@ -125,6 +127,47 @@ int main()
 }
 ```
 
+## Ex 7
+
+Dans cet exercice, il faudra développer un programme pas par pas.
+
+Essayer de faire l'exercie 7 complet avant de regarder la solution
+
+### Ex 7.1
+
+On aimerais stocker une mesure qui est composée de deux valeurs.
+
+Créer une variable `meas` qui peut contenir deux valeurs `double`
+
+### Ex 7.2
+
+Si vous avez bien réussi la première partie, vous devriez avoir un tableau 
+avec une taille de `2` qui contient des `double`.
+
+Votre programme devra maintenant demander à l'utiisateur de saisir les deux valeurs de la mesure
+séparées par une `,`.
+
+Si la saisie est correcte, les deux valeurs seront placées dans la variable `meas` de la partie 1.
+
+### Ex 7.3
+
+Modifier votre programme pour que l'utilisateur puisse saisir plusieurs mesures.
+
+Le nombre de mesure doit être défini avec un `#define`
+
+Lors de la saisie, il faut afficher dans le message le numéro de la mesure.
+
+Une fois les saisies finies, il faut les afficher
+
+```console
+Mesure 0 : Entrer les 2 valeurs séparées par une , : 1.0,2.0
+Mesure 1 : Entrer les 2 valeurs séparées par une , : 1.1,2.1
+Mesure 2 : Entrer les 2 valeurs séparées par une , : 2.1,2.2
+
+Meas 0 :  1.00 |  2.00
+Meas 1 :  1.10 |  2.10
+Meas 2 :  2.10 |  2.20
+```
 
 # Solutions
 
@@ -217,5 +260,27 @@ int main(int argc, char* argv[])
     printf("Y : %lf\n", y);
 
     return 0;
+}
+```
+
+## Ex 7
+```c
+#define NBR_MEAS 3
+int main(){
+    double meas[NBR_MEAS][2];
+
+    for(int i=0; i<NBR_MEAS; i++){
+        int nbr;
+        do{
+            printf("Mesure %d : Entrer "
+                "les 2 valeurs séparées par une , : ", i);
+            nbr = scanf("%lf,%lf", &meas[i][0], &meas[i][1]);
+            while(getchar() != '\n'){}
+        }while(nbr != 2);
+    }
+    printf("\n");
+    for(int i=0; i<NBR_MEAS; i++){
+        printf("Meas %d : %5.2lf | %5.2lf\n", i, meas[i][0], meas[i][1]);
+    }
 }
 ```
