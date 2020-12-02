@@ -45,7 +45,7 @@ Que va afficher le programme suivant
 
 ```c
 void affichage(const char text[]){
-    for (int i=0; text[i] != '\n'; i++ )
+    for (int i=0; text[i] != '\0'; i++ )
     {
         printf("%c", text[i]);
     }
