@@ -151,7 +151,7 @@ abc
 
 ### Ex 8.3
 
-Idem que pour Ex 3.2 mais avec le code ci-dessous
+Idem que pour Ex 8.2 mais avec le code ci-dessous
 
 
 ```c
