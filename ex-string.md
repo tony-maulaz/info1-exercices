@@ -205,6 +205,20 @@ La chaîne peut contenir au maximun 80 caratères.
 
 Le programme est simple, la solution fait ~20 lignes de code.
 
+*Pensez à utiliser un tableau pour stocker les occurrences*
+
+Par exemple si vous voulez compter les occurences des chiffres dans `011569899`
+
+On aurait un tableau comme ceci
+
+```c
+tab[0] = 1 // occurrence 0
+tab[1] = 2 // occurence 1
+tab[2] = 0 // occurence 2
+...
+tab[9] = 3 // occurrence 9
+```
+
 ```console
 Veuillez saisir un texte : Quelle belle journée !
 
