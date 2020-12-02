@@ -2,6 +2,65 @@
 
 ## Ex 1
 
+Déclarer une variable et l'initialiser avec la chaine de caractère `Comment allez-vous ?`
+
+## Ex 2
+
+Compléter la deuxième déclaration pour qu'elle soit identique à la première.
+
+```c
+int char1[] = "foo";
+int char2[] = {...
+```
+
+## Ex 3
+
+Dans un code, vous avez un tableau `val` qui contient des `char`.
+
+Vous devez mettre des valeurs dans ce tableau (`val[0]=...`), afin que le programme ci-dessous,
+puisse afficher `hello` en injectant votre tableau dans un `printf`
+
+```c
+char val[10];
+
+val[0] = ...
+   ...
+   
+printf("%s", val);
+```
+
+## Ex 4
+
+Ecrire le prototype d'une fonction qui prend une chaîne de caractère en entrée.
+
+Exemple de prototype :
+
+```c
+void my_func(double foo);
+```
+
+## Ex 5
+
+Que va afficher le programme suivant
+
+```c
+void affichage(const char text[]){
+    for (int i=0; text[i] != '\n'; i++ )
+    {
+        printf("%c", text[i]);
+    }
+}
+
+int main(void)
+{
+    char text[] = {'H','e','l','l','o'};
+    affichage(text);
+    return 0;
+}
+```
+
+## Ex 6
+
 Quelle est l'affichage du programme suivant :
 
 ```c
@@ -17,7 +76,7 @@ Quelle est l'affichage du programme suivant :
     printf("strlen 4 = %d\n", strlen(" "));
 ```
 
-## Ex 2
+## Ex 7
 
 Quelle est la différence entre les deux fonctions ci-dessous ?
 
@@ -47,8 +106,8 @@ int main(void)
 }
 ```
 
-## Ex 3
-### Ex 3.1
+## Ex 8
+### Ex 8.1
 
 Quel est l'affichage du programme suivant avec cette entrée :
 
@@ -81,7 +140,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### Ex 3.2
+### Ex 8.2
 
 Refaire la même chose avec l'entrée suivante
 
@@ -90,7 +149,7 @@ Refaire la même chose avec l'entrée suivante
 abc
 ```
 
-### Ex 3.3
+### Ex 8.3
 
 Idem que pour Ex 3.2 mais avec le code ci-dessous
 
@@ -122,7 +181,7 @@ int main(int argc, char* argv[])
     return RETURN_OK;
 }
 ```
-### Ex 3.4
+### Ex 8.4
 
 Dans le code ci-dessus, pourquoi est-ce qu'il faut faire le contrôle suivant : `if( text1[TAB_SIZE]-1 != '\n' )`
 et que l'on ne peut pas simplement vider le buffer comme avec un
@@ -134,9 +193,37 @@ if( text1[TAB_SIZE]-1 != '\n' ){
 }
 ```
 
-## Ex 4
+## Ex 9 Occurrence
 
-### Ex 4.1
+Faire un programme qui demande à l'utilisateur de saisir une chaine de caractère qui peut contenir des espaces.
+
+Compter le nombre d'occurrence pour chaque caractères de la table ASCII.
+
+Afficher le nombre d'occurrence de chaque caractère, si il y est présent au moins une fois.
+
+La chaîne peut contenir au maximun 80 caratères.
+
+Le programme est simple, la solution fait ~20 lignes de code.
+
+```console
+Veuillez saisir un texte : Quelle belle journée !
+
+  |  3
+! |  1
+Q |  1
+b |  1
+e |  5
+j |  1
+l |  4
+n |  1
+o |  1
+r |  1
+u |  2
+```
+
+## Ex 10
+
+### Ex 10.1
 
 Ecrire un programme qui demande à l'utilisateur de saisir son nom et son prénom.
 
@@ -144,13 +231,13 @@ Attention il peut y avoir des espaces dans le nom ou dans le prénom et les maju
 
 Les deux données sont stockées dans des variables.
 
-### Ex 4.2
+### Ex 10.2
 
 Ecrire une fonction qui transforme une chaîne de caractère en majuscule.
 
 **Vous ne devez pas utiliser la fonction `toupper`**. Vous devez écrire votre propre fonction.
 
-### Ex 4.3
+### Ex 10.3
 
 Faire une fonction qui prend une chaine de caractère en entrée. 
 
@@ -162,7 +249,7 @@ longueur de la chaine à afficher (le format du printf).
 ```console
 La chaîne : 9
 ```
-### 4.4
+### 10.4
 
 Avec les précédant exercices, écrire un programme qui :
 
@@ -181,6 +268,44 @@ Tony   : 4
 
 ## Ex 1
 
+```c
+char text[] = "Comment allez-vous ?";
+```
+
+## Ex 2
+
+```c
+int char1[] = "foo";
+int char2[] = {'f', 'o', 'o', '\0'};
+```
+
+## Ex 3
+```c
+char val[10];
+
+val[0] = 'h';
+val[1] = 'e';
+val[2] = 'l';
+val[3] = 'l';
+val[4] = 'o';
+val[5] = '\0';
+   
+printf("%s", val);
+```
+
+## Ex 4
+
+```c
+void func(char text[]);
+```
+
+## Ex 5
+
+Le programme va afficher `helllo` et ensuite continuer d'afficher le contenu de la mémoire jusqu'à
+ce que la valeur à afficher soit un `\0`
+
+## Ex 6
+
 ```console
 sizeof 1 = 8
 sizeof 2 = 10
@@ -190,13 +315,13 @@ strlen 3 = 0
 strlen 4 = 1
 ```
 
-## Ex 2
+## Ex 7
 
 `func2` est une implémentation plus rapide. Dans `func1` la fonction `strlen`
 fait une première fois le parcours de la chaîne pour calculer la longueur et ensuite
 il y a une deuxième boucle.
 
-## Ex 3.1
+## Ex 8.1
 
 Il y a une ligne vide entre les deux lignes car le `\n` n'a pas été supprimé
 
@@ -209,7 +334,7 @@ abc
 123
 ```
 
-## Ex 3.2
+## Ex 8.2
 
 ```console
 Entrée 1 :  : 12345
@@ -219,7 +344,7 @@ Entrée 2 :  :
 5
 ```
 
-## Ex 3.3
+## Ex 8.3
 ```console
 Entrée 1 :  : 12345
 Entrée 2 :  : abc
@@ -228,9 +353,36 @@ Entrée 2 :  : abc
 1234
 abc
 ```
+## Ex 9
+```c
+int main(int argc, char* argv[])
+{
+    char text[81];
+    printf("Veuillez saisir un texte : ");
+    fgets(text, 80, stdin);
 
+    const int l = strlen(text);
+    if( text[l-1] == '\n' )
+        text[l-1] = '\0';
 
-## Ex 4
+    int occurrence[NBR_CHAR] = {0};
+    int pos = 0;
+    while (text[pos] != '\0'){
+        occurrence[(int)(text[pos++])]++;
+    }
+
+    printf("\n");
+    for(int i=0; i<NBR_CHAR; i++){
+        if( occurrence[i] > 0 ){
+            printf("%c |%3d\n", i, occurrence[i]);
+        }
+    }
+
+    return EXIT_SUCCESS;
+}
+```
+
+## Ex 10
 
 ```c
 void string_to_upper(char txt[])
