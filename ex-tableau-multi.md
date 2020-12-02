@@ -131,11 +131,11 @@ int main()
 
 Dans cet exercice, il faudra développer un programme pas par pas.
 
-Essayer de faire l'exercie 7 complet avant de regarder la solution
+Essayer de faire l'exercice  7 complet avant de regarder la solution
 
 ### Ex 7.1
 
-On aimerais stocker une mesure qui est composée de deux valeurs.
+On aimerait stocker une mesure qui est composée de deux valeurs.
 
 Créer une variable `meas` qui peut contenir deux valeurs `double`
 
@@ -144,7 +144,7 @@ Créer une variable `meas` qui peut contenir deux valeurs `double`
 Si vous avez bien réussi la première partie, vous devriez avoir un tableau 
 avec une taille de `2` qui contient des `double`.
 
-Votre programme devra maintenant demander à l'utiisateur de saisir les deux valeurs de la mesure
+Votre programme devra maintenant demander à l'utilisateur de saisir les deux valeurs de la mesure
 séparées par une `,`.
 
 Si la saisie est correcte, les deux valeurs seront placées dans la variable `meas` de la partie 1.
