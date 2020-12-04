@@ -305,7 +305,7 @@ void find(){
 
 int main(void)
 {
-    const char txt[] = "Bonjour tout le monde, comment allez-vous ?";
+    const char txt[] = "Bonjour tout le monde, comment allez-vous oon?";
     const char motif[] = "on"; 
     int pos;
     int count;
