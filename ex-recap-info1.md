@@ -29,6 +29,6 @@ Motif : on
 - Faire un programme qui dessine un `rond` de diamètre `R` dans ce tableau.
 - Le diamètre est choisi avec un `define`ou `const`, il n'y a pas de saisie.
 - On utilise le caractère `*` pour faire le motif
-- Compter le nombre d'étoile affichée
+- Compter le nombre d'étoile affichées
 - Ensuite dessiner un carré
 - Les formes sont dessinées au centre du tableau
