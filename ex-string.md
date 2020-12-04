@@ -485,3 +485,18 @@ int main(int argc, char* argv[])
     return 0;
 }
 ```
+
+## Ex 11 - Motif
+
+Vous trouverez une solution ici
+
+[\\eistore1\profs\TMZ\info\info1\exercices\find-motif](\\eistore1\profs\TMZ\info\info1\exercices\find-motif)
+
+Il y a une solution qui utilise une seule boucle donc plus efficasse.
+
+La solution `find_simple` utilise deux boucles, mais est plus facile à faire et à comprendre
+
+Si vous voulez tester votre fonction :
+- Copier le répertoire et inserer votre fonction dedans.
+- Renomer ma fonction `find` pour pouvoir utiliser la votre
+- Executer `make clean` et `make test`
