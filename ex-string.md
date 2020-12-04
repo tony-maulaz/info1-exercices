@@ -284,6 +284,44 @@ MAULAZ : 6
 Tony   : 4
 ```
 
+### Ex 11 - Motif
+
+Complèter la fonction `find` pour que le programme suivant affiche la position du motif s'il est présent dans 
+la chaîne de caractères.
+
+La fonction doit aussi compter le nombre de fois que le motif est présent dans toute la chaîne.
+
+La position correspond à l'index du premier caractère dans la chaîne.
+
+Si le motif n'est pas présent, la fonction doit mettre `-1` dans la position.
+
+```c
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void find(){
+}
+
+int main(void)
+{
+    const char txt[] = "Bonjour tout le monde, comment allez-vous ?";
+    const char motif[] = "on"; 
+    int pos;
+    int count;
+
+    find(txt, motif, &pos, &count);
+
+    if( pos >= 0)
+        printf("Le premier motif commence à la pos : %d "
+            "et il est présent %d fois.", pos, count);
+    else
+        printf("Le motif n'est pas présent");
+    
+    return EXIT_SUCCESS;
+}
+```
+
 # Solutions
 
 ## Ex 1
