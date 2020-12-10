@@ -289,6 +289,11 @@ Tony   : 4
 Complèter la fonction `find` pour que le programme suivant affiche la position du motif s'il est présent dans 
 la chaîne de caractères.
 
+La taille du motif n'est pas fixe. Donc par exemple dans l'exemple ci-dessous, on peut utiliser comme modif :
+-  on
+-  Bonjour
+-  allez
+
 La fonction doit aussi compter le nombre de fois que le motif est présent dans toute la chaîne.
 
 La position correspond à l'index du premier caractère dans la chaîne.
