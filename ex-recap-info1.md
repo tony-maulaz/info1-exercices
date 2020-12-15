@@ -37,4 +37,38 @@ Motif : on
 
 Implémenter le crible en C
 
-(https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne)[https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne]
+[lien](https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne)
+
+# Solutions
+
+## Crible d'Ératosthène
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+#define SIZE 1000
+int main() {
+    int array[SIZE];
+
+    // Initialiser le tableau
+    for (int i = 0; i < SIZE; i++)
+        array[i] = i + 1;
+
+    // Crible d'Ératosthène
+    const int max = sqrt(SIZE);
+    for (int nbr = 2; nbr < max; nbr++){
+        if( array[nbr-1] < 0 )
+            continue;
+        for (int i = nbr*2; i <= SIZE; i+=nbr)
+            array[i-1] = -1; // Discard number
+    }
+                
+    // Affiche mon tableau
+    int count = 0;
+    for (int i = 0; i < SIZE; i++)
+        if (array[i] != -1) // Ignore discarded
+            printf("%5d%c", array[i], ++count % 10 == 0 ? '\n' : ' ');
+    printf("\n");
+}
+```
