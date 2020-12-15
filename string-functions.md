@@ -39,6 +39,32 @@ Faire un bout de code qui concatène `text1` et `text2` dans `text3` et qui affi
 
 Il faut contrôler que la chaîne de destination est assez grande.
 
+## Ex 6
+Dans le programme ci-dessous, quelle est la valeur de `NB_CHAR_MAX` pour que le programme fonctionne.
+
+Il faut regarder le code pour savoir combien de caractère l'utilisateur peut saisir.
+
+La taille du tableau pour stocker la chaîne est `#define SIZE 10`.
+
+```c
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+
+#define SIZE 10
+
+#define NB_CHAR_MAX ???
+
+int main()
+{
+    char text[SIZE];
+
+    printf("Bonjour, entrer votre texte (taille max : %d) : \n", NB_CHAR_MAX);
+    fgets(text, SIZE, stdin);
+    printf("Vous avez entrer : %s\n", text);
+}
+
+```
 
 # Solutions
 
@@ -80,3 +106,6 @@ int main() {
         printf("Ex 5 : La dest est trop petite");
 }
 ```
+
+## Ex 6
+On peut saisir 8 caractères car il y a le `\n` et le `\0`
