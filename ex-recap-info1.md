@@ -32,3 +32,9 @@ Motif : on
 - Compter le nombre d'étoile affichées
 - Ensuite dessiner un carré
 - Les formes sont dessinées au centre du tableau
+
+## Crible d'Ératosthène
+
+Implémenter le crible en C
+
+(https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne)[https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne]
