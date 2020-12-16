@@ -169,6 +169,48 @@ Meas 1 :  1.10 |  2.10
 Meas 2 :  2.10 |  2.20
 ```
 
+## Ex 8 - Matrice
+Complèter le programme suivant pour qu'il retourne la matrice `mat` dans `dest`
+
+Le programme suivant doit donc afficher
+
+```console
+$ ./mat
+1 4 7 10
+2 5 8 11
+3 6 9 12
+```
+
+```c
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define SIZE_L 4
+#define SIZE_C 3
+
+int main(void)
+{
+    int mat[SIZE_L][SIZE_C] =
+    { {1, 2, 3},
+      {4, 5, 6},
+      {7, 8, 9},
+      {10, 11, 12} };
+
+    int dest[SIZE_C][SIZE_L];
+
+    // ...
+
+    for (int l = 0; l < SIZE_C; l++)
+    {
+        for (int c = 0; c < SIZE_L; c++)
+        {
+            printf("%d%c", dest[l][c], c < (SIZE_L-1) ? ' ' : '\n');
+        }
+    }
+}
+```
+
 # Solutions
 
 ## Ex 1
@@ -283,4 +325,15 @@ int main(){
         printf("Meas %d : %5.2lf | %5.2lf\n", i, meas[i][0], meas[i][1]);
     }
 }
+```
+
+## Ex 8
+```c
+    for (int l = 0; l < SIZE_L; l++)
+    {
+        for (int c = 0; c < SIZE_C; c++)
+        {
+            dest[c][l] = mat[l][c];
+        }
+    }
 ```
