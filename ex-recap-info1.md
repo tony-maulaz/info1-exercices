@@ -28,10 +28,9 @@ Complèter le programme suivant pour stocker le texte dans une matrice.
 
 Si la matrice est trop petite, il faut retourner 1.
 
-L'affichage du programme :
-
 Un espace est ajouté entre chaque caractères lors de l'affichage, il n'est pas stocké dans la matrice.
 
+L'affichage du programme :
 ```console
 $ ./mat
 B o n j o u r   l e
