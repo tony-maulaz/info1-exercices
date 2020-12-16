@@ -23,6 +23,54 @@ Motif : on
 2
 ```
 
+## Texte matrice
+Complèter le programme suivant pour stocker le texte dans une matrice.
+
+Si la matrice est trop petite, il faut retourner 1.
+
+L'affichage du programme :
+
+Un espace est ajouté entre chaque caractères lors de l'affichage, il n'est pas stocké dans la matrice.
+
+```console
+$ ./mat
+B o n j o u r   l e
+s   a m i s ,   v o
+i c i   l e   t e x
+t e   a   s a u v e
+r   d a n s   l a  
+m a t r i c e . 
+```
+
+```c
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define SIZE_L 20
+#define SIZE_C 10
+
+int main(void)
+{
+    char text[] = {"Bonjour les amis, voici le texte a sauver dans la matrice."};
+    
+    char mat[SIZE_L][SIZE_C] = { 0 };
+
+    // ...
+
+    for (int l = 0; l < SIZE_L; l++)
+    {
+        for (int c = 0; c < SIZE_C; c++)
+        {
+            if(mat[l][c] != '\0'){
+                printf("%c%c", mat[l][c], c < (SIZE_C-1) ? ' ' : '\n');
+            }
+        }
+    }
+}
+```
+
 ## Dessin
 
 - Définir un tableau de 2 dimensions avec des `#define`
@@ -43,6 +91,23 @@ Implémenter le crible en C
 [lien](https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne)
 
 # Solutions
+
+## Texte matrice
+```c
+    if( strlen(text)+1 >= (SIZE_C * SIZE_L) ){
+        return 1;
+    }
+
+    int col = 0;
+    int ligne = 0;
+    for(int pos=0; text[pos] != '\0'; pos++){
+        mat[ligne][col] = text[pos];
+        if( ++col >= SIZE_C ){
+            col = 0;
+            ligne++;
+        }
+    }
+```
 
 ## Crible d'Ératosthène
 
