@@ -505,3 +505,97 @@ Si vous voulez tester votre fonction :
 - Copier le répertoire et inserer votre fonction dedans.
 - Renomer ma fonction `find` pour pouvoir utiliser la votre
 - Executer `make clean` et `make test`
+
+```c
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void find(const char text[], const char motif[], int* pos, int* count)
+{
+    bool inside_motif = false;
+    int pos_start;
+    *pos = -1;
+    *count = 0;
+
+    for (int ind = 0; text[ind] != '\0'; ind++)
+    {
+        if (inside_motif)
+        {
+            const int pos_motif = ind - pos_start;  // pos inside motif
+            if (motif[pos_motif] != text[ind])
+            {  // motif not equal
+                inside_motif = false;
+            }
+            else if (motif[pos_motif + 1] == '\0')  // end of motif
+            {
+                (*count)++;
+                if (*pos == -1)  // set pos only the first time
+                {
+                    *pos = pos_start;
+                }
+                inside_motif = false;
+            }
+        }
+
+        // detect start of motif
+        if (text[ind] == motif[0] && !inside_motif)
+        {
+            pos_start = ind;
+            inside_motif = true;
+        }
+    }
+}
+
+void find_simple(const char text[], const char motif[], int* pos, int* count)
+{
+    *pos = -1;
+    *count = 0;
+
+    for (int ind = 0; text[ind] != '\0'; ind++)
+    {
+        // detect start of motif
+        if (text[ind] == motif[0])
+        {
+            // browse through the pattern
+            for (int pos_motif = 0; motif[pos_motif] != '\0'; pos_motif++)
+            {
+                // motif not equal text
+                if (motif[pos_motif] != text[ind + pos_motif]){
+                    break;
+                }
+
+                if (motif[pos_motif + 1] == '\0') // last motif char
+                {
+                    (*count)++;
+                    if (*pos == -1)  // set pos only the first time
+                    {
+                        *pos = ind;
+                    }
+                }
+            }
+        }
+    }
+}
+
+int main(int argc, char* argv[])
+{
+    // const char txt[] = "onBojoonur tout le mononde, comment allez-vous on?";
+    // const char motif[] = "on";
+    int pos;
+    int count;
+
+    //find(argv[2], argv[1], &pos, &count);
+    find_simple(argv[2], argv[1], &pos, &count);
+
+    if (pos >= 0)
+        printf(
+            "Le premier motif commence à la pos : %d "
+            "et il est présent %d fois.",
+            pos, count);
+    else
+        printf("Le motif n'est pas présent");
+
+    return EXIT_SUCCESS;
+}
+```
