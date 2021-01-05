@@ -77,8 +77,7 @@ int main(void)
     char text[] = {"Bonjour les amis, voici le texte a sauver dans la matrice."};
     
     char mat[SIZE_L][SIZE_C] = { 0 };
-    const char text[] = {"Le texte à analyser. Avec des MAJUSCULE !"};
-    const char find_char = 'a';
+
     // ...
 
     for (int l = 0; l < SIZE_L; l++)
