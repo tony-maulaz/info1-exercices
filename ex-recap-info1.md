@@ -1,3 +1,25 @@
+## Recherche caractère
+
+Compléter le code ci-dessous afin de compter le nombre de caractère dans une chaîne, le code doit être insensible à la casse.
+
+Vous pouvez utiliser les libraires `string.h` et `ctype.h`
+
+```c
+#include <string.h>
+#include <ctype.h>
+
+int main(void)
+{
+    const char text[] = "Le texte à analyser. Avec des MAJUSCULE !";
+    const char find_char = 'a';
+
+    int count = 0;
+    // ajouter le code ici ...
+
+    printf("Il y a %d caractères", count);
+}
+```
+
 ## Saisie multiple
 
 Ecrire un programme qui permet de calculer la somme des nombres saisis.
@@ -52,21 +74,13 @@ m a t r i c e .
 
 int main(void)
 {
-    char text[] = {"Bonjour les amis, voici le texte a sauver dans la matrice."};
-    
-    char mat[SIZE_L][SIZE_C] = { 0 };
+    const char text[] = {"Le texte à analyser. Avec des MAJUSCULE !"};
+    const char find_char = 'a';
 
-    // ...
+    int count = 0;
+    // ajouter le code ici...
 
-    for (int l = 0; l < SIZE_L; l++)
-    {
-        for (int c = 0; c < SIZE_C; c++)
-        {
-            if(mat[l][c] != '\0'){
-                printf("%c%c", mat[l][c], c < (SIZE_C-1) ? ' ' : '\n');
-            }
-        }
-    }
+    printf("Il y a %d fois le caractères \'%c\'", count, find_char);
 }
 ```
 
@@ -151,6 +165,27 @@ int main(void)
 ```
 
 # Solutions
+
+## Recherche caractère
+```c
+#include <string.h>
+#include <ctype.h>
+
+int main(void)
+{
+    const char text[] = "Le texte à analyser. Avec des MAJUSCULE !";
+    const char find_char = 'a';
+
+    int count = 0;
+    for(int pos=0; text[pos] != '\0'; pos++){
+        if( tolower(pos[text]) == find_char  ){
+            count++;
+        }
+    }
+
+    printf("Il y a %d fois le caractères \'%c\'", count, find_char);
+}
+```
 
 ## Texte matrice
 ```c
