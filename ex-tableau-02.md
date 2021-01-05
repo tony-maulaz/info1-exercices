@@ -78,6 +78,40 @@ Dans la fonction `copy` de l'exercice 2 :
 - 6.1 : Pourquoi le premier `const` est important dans la fonction ci-dessous ?
 - 6.2 : Pourquoi est-ce que l’on n’a pas besoin de mettre un `const` avec le dernier paramètre `int` ?
 
+## Ex 7
+
+Écrire une fonction qui calcule la valeur `moyenne` des éléments du tableau. 
+
+Cette fonction doit aussi retourner la valeur `max` qui est dans le tableau. 
+
+Cette fonction n'a pas de valeur de retour, c'est uniquement des paramètres.
+
+L'affichage du programme ci-dessous est :
+
+```console
+La moyenne : 3.50
+La valeur max : 6
+```
+
+```c
+#include <stdio.h>
+
+void mean(...){
+}
+
+
+int main(void)
+{
+    int tab[] = {1,2,3,4,5,6};
+    int size = 6;
+    int max_tab;
+    double mean_tab;
+    mean(...);
+
+    printf("La moyenne : %.2f\n", mean_tab);
+    printf("La valeur max : %d\n", max_tab);
+}
+```
 
 # Solutions
 
@@ -135,3 +169,30 @@ Si le paramètre `size` est plus grand que la taille du tableau.
 
 On accède à un indice du tableau qui est en dehors du tableau.
 
+## Ex 7
+```c
+#include <stdio.h>
+
+void mean(int tab[], int size, int* max, double* mean){
+    double sum = 0;
+    *max = 0;
+    for(int i=0; i<size; i++){
+        sum += tab[i];
+        if( *max < tab[i] )
+            *max = tab[i];
+    }
+    *mean = sum / size;
+}
+
+
+int main(void)
+{
+    int tab[] = {1,2,3,4,5,6};
+    int max_tab;
+    double mean_tab;
+    mean(tab, 6, &max_tab, &mean_tab);
+
+    printf("La moyenne : %.2f\n", mean_tab);
+    printf("La valeur max : %d\n", max_tab);
+}
+```
