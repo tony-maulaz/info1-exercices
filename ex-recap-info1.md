@@ -74,12 +74,22 @@ m a t r i c e .
 
 int main(void)
 {
+    char text[] = {"Bonjour les amis, voici le texte a sauver dans la matrice."};
+    
+    char mat[SIZE_L][SIZE_C] = { 0 };
     const char text[] = {"Le texte à analyser. Avec des MAJUSCULE !"};
     const char find_char = 'a';
+    // ...
 
-    int count = 0;
-    // ajouter le code ici...
-
+    for (int l = 0; l < SIZE_L; l++)
+    {
+        for (int c = 0; c < SIZE_C; c++)
+        {
+            if(mat[l][c] != '\0'){
+                printf("%c%c", mat[l][c], c < (SIZE_C-1) ? ' ' : '\n');
+            }
+        }
+    }
     printf("Il y a %d fois le caractères \'%c\'", count, find_char);
 }
 ```
