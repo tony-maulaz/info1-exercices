@@ -187,7 +187,7 @@ int main(void)
 
     int count = 0;
     for(int pos=0; text[pos] != '\0'; pos++){
-        if( tolower(pos[text]) == find_char  ){
+        if( tolower(pos[text]) == tolower(find_char) ){
             count++;
         }
     }
