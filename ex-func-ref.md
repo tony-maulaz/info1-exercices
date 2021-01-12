@@ -140,6 +140,63 @@ link = 300;
 *link = 34.5;
 ```
 
+### Ex 3.0
+Quel est l'affichage du programme suivant :
+
+```C
+#include <stdio.h>
+
+void func1(int* val){
+    (*val)++;    
+}
+
+void func2(int val){
+    val++;    
+}
+
+void func3(int* val){
+    val++;    
+}
+
+void func4(int* val, int val1){
+    val1 = 6;
+    *val = val1;
+}
+
+void func5(int* val, int val1){
+    *val = 5;
+    val1 = *val;    
+}
+
+int main(int argc, char* argv[])
+{
+    int val = 0;
+    int val1 = 12;
+
+    func1(&val);
+    printf("Rep 1 : %d\n", val);
+
+    val = 0;
+    func2(val);
+    printf("Rep 2 : %d\n", val);
+
+    val = 0;
+    func3(&val);
+    printf("Rep 3 : %d\n", val);
+
+    val = 0;
+    val1 = 12;    
+    func4(&val, val1);
+    printf("Rep 4 : %d  /  %d\n", val, val1);
+
+    val = 0;
+    val1 = 12;    
+    func5(&val, val1);
+    printf("Rep 4 : %d  /  %d\n", val, val1);
+}
+```
+
+
 ## Solutions
 ```BASH
 Q2 = 17
@@ -226,3 +283,13 @@ Non, on ne peut pas passer l'adresse d'une constante car la valeur n'est pas mod
 ### Ex 2.2
 
 On écrase une valeur dans la mémoire du système alors que l'on ne sait pas à quoi correspond l'adresse `300`
+
+### Ex 3.0
+
+```C
+Rep 1 : 1
+Rep 2 : 0
+Rep 3 : 0
+Rep 4 : 6  /  12
+Rep 4 : 5  /  12
+```
