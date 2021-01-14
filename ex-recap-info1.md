@@ -226,6 +226,91 @@ int main(void)
 
 # Solutions
 
+## Tableau
+```C
+#include <stdio.h>
+#include <limits.h>
+#include <math.h>
+
+#define SIZE_MEAS 3
+
+void func(long tab[][SIZE_MEAS], int pos_meas, size_t size, double* et, long* max){
+    double mean = 0.0;
+    *max = LONG_MIN;
+    for(size_t i = 0; i<size; i++){
+        mean += tab[i][pos_meas];
+        for(size_t k = 1; k < SIZE_MEAS; k++){
+            if( *max < tab[i][k])
+                *max = tab[i][k];
+        }
+    }
+    mean /= size;
+
+    double calc = 0.0;
+    for(size_t i = 0; i<size; i++){
+        calc += pow( (tab[i][pos_meas] - mean), 2);
+    }
+
+    *et = sqrt( calc/size );
+}
+
+int main(void)
+{
+    long meas[][SIZE_MEAS] = {
+        {1, 6, 3},
+        {2, 7, 2},
+        {6, -3, -2},
+        {3, -100, 90},
+        {12, 46, -34},
+        {10, -46, 200}
+    };
+
+    /* Créer une fonction qui
+     *  - Trier les mesures en ordre croissant avec la première valeur
+     *  - Calcul l'écart type du tableau ci-dessus pour la deuxième valeur
+     *  - Trouver la valeur max du tableau
+     *  - Pour l'appelle de la fonction, vous devez calculer le nombre d'élements
+    */
+
+    int nbr = sizeof(meas) / (sizeof(long) * SIZE_MEAS);
+    printf("\nIl y a %d mesures\n\n", nbr);
+
+    printf("Affichage des swap\n\n");
+    for(size_t i = 0; i<nbr-1; i++){
+        for(size_t k = i+1; k<nbr; k++){
+            if( meas[i][0] > meas[k][0] ){
+                printf("Swap : %ld / %ld\n", meas[i][0], meas[k][0]);
+                int tmp[SIZE_MEAS];
+
+                for(size_t j=0; j<SIZE_MEAS; j++){
+                    tmp[j] = meas[i][j];
+                    meas[i][j] = meas[k][j];
+                    meas[k][j] = tmp[j];
+                }
+            }
+            else{
+                printf("No Swap : %ld / %ld\n", meas[i][0], meas[k][0]);
+            }
+        }
+    }
+
+    //Affichage
+    printf("\n\nAffichage des meas : \n");
+    for(size_t i = 0; i<nbr; i++){
+        printf("Meas %ld : %ld / %ld / %ld\n", i+1, meas[i][0], meas[i][1], meas[i][2] );
+    }
+    printf("\n");
+
+    double et1;
+    long max;
+
+    func( meas, 1, nbr, &et1, &max );
+
+    printf("Ecart tpye : %lf\n", et1);
+    printf("Max : %ld\n", max);
+}
+```
+
 ## Recherche caractère
 ```c
 #include <string.h>
