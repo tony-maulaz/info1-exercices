@@ -1,3 +1,54 @@
+## Tableau
+
+```C
+#include <stdio.h>
+#include <limits.h>
+#include <math.h>
+
+#define SIZE_MEAS 3
+
+int main(void)
+{
+    long meas[][SIZE_MEAS] = {
+        {1, 6, 3},
+        {2, 7, 2},
+        {6, -3, -2},
+        {3, -100, 90},
+        {12, 46, -34}
+    };
+
+    /* Créer une fonction qui
+     *  - Trier les mesures en ordre croissant avec la première valeur
+     *  - Calcul l'écart type du tableau ci-dessus pour la deuxième valeur
+     *  - Trouver la valeur max du tableau
+     *  - Pour l'appelle de la fonction, vous devez calculer le nombre d'élements
+    */
+
+    int nbr = 0; // Calcul nbr ligne 
+    printf("\nIl y a %d mesures\n\n", nbr);
+
+    for(size_t i = 0; i<nbr-1; i++){
+    }
+
+    //Affichage
+    printf("\n\nAffichage des meas : \n");
+    for(size_t i = 0; i<nbr; i++){
+        printf("Meas %ld : %ld / %ld / %ld\n", i+1, meas[i][0], meas[i][1], meas[i][2] );
+    }
+    printf("\n");
+
+    double et1;
+    long max;
+
+    func( meas, 1, nbr, &et1, &max );
+
+    printf("Ecart tpye : %lf\n", et1);
+    printf("Max : %ld\n", max);
+}
+
+
+```
+
 ## Recherche caractère
 
 Compléter le code ci-dessous afin de compter le nombre de caractère dans une chaîne, le code doit être insensible à la casse.
