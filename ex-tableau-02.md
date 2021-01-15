@@ -174,7 +174,7 @@ On accède à un indice du tableau qui est en dehors du tableau.
 #include <stdio.h>
 
 void mean(int tab[], int size, int* max, double* mean){
-    double sum = 0;
+    double sum = 0.;
     *max = 0;
     for(int i=0; i<size; i++){
         sum += tab[i];
