@@ -8,3 +8,6 @@
 ## 20 - Les conditions
 - [conditions.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex20-conditions.md)
 
+## 30 - Affichage
+- [affichage.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex30-printf.md)
+
