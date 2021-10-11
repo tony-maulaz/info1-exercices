@@ -27,3 +27,6 @@ Est-ce que les constantes suivantes sont valides
 - -1.34e-3
 - O59
 - 0x6H3
+- '\n'
+- '2'
+- "34"
