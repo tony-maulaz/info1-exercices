@@ -13,11 +13,11 @@ Donner le type des constantes suivantes :
 - '2'
 
 # Ex 2 
-Est-ce que les constantes suivantes sont valides
-- Si oui, quel est le type
-- Sinon, pourquoi ?
+Est-ce que les constantes suivantes sont valides ?
 
-- 12.
+Si oui, quel est le type, sinon, pourquoi ?
+
+- `12.`
 - "a"
 - "int"
 - 0x4AF
@@ -25,7 +25,7 @@ Est-ce que les constantes suivantes sont valides
 - 'ab'
 - "12A#"
 - -1.34e-3
-- O59
+- 059
 - 0x6H3
 - '\n'
 - '2'
