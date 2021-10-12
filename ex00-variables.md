@@ -35,3 +35,27 @@ Quelle est la valeur décimale de `0b010110101` ?
 
 ### Ex 7
 Quelle est la valeur `min` d'une variable signée encodée sur 8 bits ?
+
+
+# Solutions
+## Ex 1
+La valeur de `c` est `-8`
+
+`a : 0b0011`
+`b : 0b0101`
+`c : 0b1000`
+
+## Ex 2
+`0xB435`
+
+## Ex 3
+`0b1001 0011`
+
+## Ex 5
+`4095`
+
+## Ex 6
+`181`
+
+## Ex 7
+`-128`

@@ -66,3 +66,37 @@ else if( val1 > 100 ){
     }
 }
 ```
+
+
+## Solutions
+### Ex 1
+```console
+Cond 1
+```
+
+### Ex 2
+```console
+Cond 1
+```
+
+### Ex 3
+```console
+Cond 2
+```
+
+### Ex 4
+```console
+Cond 1
+```
+
+### Ex 5
+```C
+int val1;
+
+if( (val1 > 4) && (val < 8) ){
+    printf("Cond 1");
+}
+else if( val1 == 120 ){
+    printf("Cond 2");
+}
+```
