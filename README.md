@@ -11,3 +11,5 @@
 ## 30 - Affichage
 - [affichage.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex30-printf.md)
 
+## 40 - Saisie
+- [saisie.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex40-saisie.md)
