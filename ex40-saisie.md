@@ -23,7 +23,7 @@ a69 | |
 ## Ex 2
 Même consigne que pour l'exercice 1
 ```C
-    printf("Veuillez entrer une valeur :\n>");
+    printf("Veuillez entrer deux valeurs séparées par un espace :\n>");
     int a, b=3;
     int ret = scanf("%d %d",&a,&b);
 ```
@@ -38,7 +38,7 @@ a 56 12 | | |
 ## Ex 3
 Même consigne que pour l'exercice 1
 ```C
-    printf("Veuillez entrer une valeur :\n>");
+    printf("Veuillez réaliser votre saisie :\n>");
     int a;
     double b;
     char c;
