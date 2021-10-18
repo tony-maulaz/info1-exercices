@@ -91,6 +91,8 @@ Si le `scanf` ne peut pas extraire les deux valeurs, le programme retourne `2`.
 
 Si les caractères saisis ne sont pas des majuscules, le programme retourne `1`.
 
+**Vous ne devez pas utiliser de fonction de `ctype.h`**
+
 ## Solutions
 ### Ex 1
 
