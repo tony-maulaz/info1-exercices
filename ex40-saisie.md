@@ -93,6 +93,19 @@ Si les caractères saisis ne sont pas des majuscules, le programme retourne `1`.
 
 **Vous ne devez pas utiliser de fonction de `ctype.h`**
 
+## Ex 9
+Réaliser un programme qui demande à un utilisateur de saisir une date dans ce format : `02/06/2021`
+
+Récupérer les trois valeurs numériques dans des variables et afficher :
+
+Il faut respecter l'alignement
+
+```console
+Jour  :   02
+Mois  :   06
+Année : 2021
+```
+
 ## Solutions
 ### Ex 1
 

@@ -13,3 +13,6 @@
 
 ## 40 - Saisie
 - [saisie.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex40-saisie.md)
+
+## 50 - Caractères
+- [caractere.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex50-caractere.md)
