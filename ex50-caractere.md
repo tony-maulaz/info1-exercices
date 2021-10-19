@@ -31,12 +31,18 @@ char c = '2';
 
 ## Ex 3
 Donner une expression (sans utiliser de fonction) qui retourne `true` ou `1` si la variable `test` est un caractère qui représente un chiffre.
+
+Pour rappel l'expression : `12 > 6` vaut `1` et `-4 > 0` vaut `0`
+
 ```C
 char test = 'a';
 ```
 
 ## Ex 4
-Donner une expression qui donne `true` si la valeur de `val` est comprise dans la table ASCII
+Donner une expression qui donne `true` ou `1` si la valeur de `val` est comprise dans la table ASCII
+
+Pour rappel l'expression : `12 > 6` vaut `1` et `-4 > 0` vaut `0`
+
 ```C
 int val = 122;
 ```
