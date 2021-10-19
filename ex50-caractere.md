@@ -45,6 +45,18 @@ int val = 122;
 Réaliser un programme qui demande à un utilisateur de saisir un caractère en minuscule et ensuite le programme affiche le caractère en majuscule.
 
 Utiliser une fonction de la libraire `ctype.h` pour contrôler que la saisie est en minuscule.
+Vous trouverez les fonctions sur la `Refcard` dans *Tests de classe de caractères*
+
+Exemple d'utilisation
+```C
+// Ne pas oublier le include
+#include <ctype.h>
+
+char c = '1';
+if( isalnum(c) ){
+    printf("Le caractère %c est un alphanumérique", c);
+}
+```
 
 Vous ne devez pas utiliser de fonction de `ctype.h` pour transformer le caractère.
 
