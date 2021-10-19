@@ -65,16 +65,55 @@ Ex3 |  |  |  |
 Modifié | | | | 
 
 ## Ex 5
-Écrire le code a placer après un `scanf` qui permet de vider le buffer ?
+### 5.1
+Même consigne que pour l'exercice 1
+
+Pour rappel, regarder le slide dans le polycopié Inof1-05 slide 41.
+- Lorsque il y a un espace dans le filtre, cela veut dire : 0 1 ou plusieurs espaces.
+
+```C
+    printf("Veuillez réaliser votre saisie :\n>");
+    char c1, c2;
+    int ret = scanf("%c %c",&c1,&c2);
+```
+
+Saisie | `ret` | `c1` | `c2`
+---|---|---|---
+1234 | | |
+12 a | | |
+a1 | | | 
+a 1 | | |
+u &nbsp; &nbsp; 2 | | | 
+
+### 5.2
+
+Idem que pour l'exercice `5.1` mais avec le filtre modifié.
+
+```C
+    printf("Veuillez réaliser votre saisie :\n>");
+    char c1, c2;
+    int ret = scanf("%c%c",&c1,&c2);
+```
+
+Saisie | `ret` | `c1` | `c2`
+---|---|---|---
+1234 | | |
+12 a | | |
+a1 | | | 
+a 1 | | |
+u &nbsp; &nbsp; 2 | | |
 
 ## Ex 6
+Écrire le code a placer après un `scanf` qui permet de vider le buffer ?
+
+## Ex 7
 Un produit est identifié avec un numéro de série qui respecte ce format : `PA135/78U`
 
 Les lettres `PA  /  et  U` sont obligatoires.
 
 Écrire un `scanf` qui permet d'extraire les deux nombres (entier) du numéro de série. Dans cette exemple il devrait pouvoir extraire `135` et `78`.
 
-## Ex 7
+## Ex 8
 Modifier le code ci-dessous pour le rendre robuste en contrôlant le nombre de valeurs récupérées par le `scanf`.
 
 En cas d'erreur il faut quitter le programme.
@@ -84,7 +123,7 @@ int val1, val2;
 scanf("%d %d", &val1, &val2);
 ```
 
-## Ex 8
+## Ex 9
 Réaliser un programme qui demander à l'utilisateur de saisir deux lettres majuscules séparées par un espace.
 
 Si le `scanf` ne peut pas extraire les deux valeurs, le programme retourne `2`.
@@ -93,7 +132,7 @@ Si les caractères saisis ne sont pas des majuscules, le programme retourne `1`.
 
 **Vous ne devez pas utiliser de fonction de `ctype.h`**
 
-## Ex 9
+## Ex 10
 Réaliser un programme qui demande à un utilisateur de saisir une date dans ce format : `02/06/2021`
 
 Récupérer les trois valeurs numériques dans des variables et afficher :
@@ -145,11 +184,30 @@ Ex3 | 3 | 4 | 0.7 | 6
 Modifié | 3  | 4 | 6.7 | ' ' (space)
 
 ### Ex 5
+#### 5.1
+Saisie | `ret` | `c1` | `c2`
+---|---|---|---
+1234 | 2 | '1' | '2'
+12 a | 2 | '1' | '2'
+a1 | 2 | 'a' | '1'
+a 1 | 2 | 'a' | '1'
+u &nbsp; &nbsp; 2 | 2 | 'u' | '2'
+
+#### 5.2
+Saisie | `ret` | `c1` | `c2`
+---|---|---|---
+1234 | 2 | '1' | '2'
+12 a | 2 | '1' | '2'
+a1 | 2 | 'a' | '1' 
+a 1 | 2 | 'a' | ' '
+u &nbsp; &nbsp; 2 | 2 | 'u' | ' '
+
+### Ex 6
 ```C
 while( getchar() != '\n' ){}
 ```
 
-### Ex 6
+### Ex 7
 ```C
 int val1 = 0;
 int val2 = 0;
@@ -159,7 +217,7 @@ if( ret != 2 ){
 }
 ```
 
-### Ex 7
+### Ex 8
 ```C
 int val1, val2;
 const int ret = scanf("%d %d", &val1, &val2);
@@ -168,7 +226,7 @@ if( ret != 2 ) {
 }
 ```
 
-### Ex 8
+### Ex 9
 ```C
 #include <stdio.h>
 
