@@ -142,7 +142,7 @@ Saisie | `ret` | `a` | `b` | `c`
 Scanf | `ret` | `a` | `b` | `c`
 ---|---|---|--- |--- 
 Ex3 | 3 | 4 | 0.7 | 6
-Modifié | 3  | 4 | 6 | ' ' (space)
+Modifié | 3  | 4 | 6.7 | ' ' (space)
 
 ### Ex 5
 ```C
