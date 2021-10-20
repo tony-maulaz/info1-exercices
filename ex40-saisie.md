@@ -53,7 +53,7 @@ Saisie | `ret` | `a` | `b` | `c`
 8u7.3 | | | |
 
 ## Ex 4
-En reprenant l'exercice #3, quelle serait le résultat en modifiant le format ainsi avec la saisie : `4 6.7`?
+En reprenant l'exercice #3, quel serait le résultat en modifiant le format ainsi avec la saisie : `4 6.7`?
 ```C
     int ret1 = scanf("%d %c %lf",&a,&c,&b); // scanf Ex3
     int ret2 = scanf("%d%c %lf",&a,&c,&b); // scanf modifié
@@ -68,8 +68,8 @@ Modifié | | | |
 ### 5.1
 Même consigne que pour l'exercice 1
 
-Pour rappel, regarder le slide dans le polycopié Inof1-05 slide 41.
-- Lorsque il y a un espace dans le filtre, cela veut dire : 0 1 ou plusieurs espaces.
+Pour rappel, regarder le slide dans le polycopié *Inof1-05 slide 41*.<br/>
+Lorsqu'il y a un espace dans le filtre, cela veut dire : 0 1 ou plusieurs espaces.
 
 ```C
     printf("Veuillez réaliser votre saisie :\n>");
@@ -111,7 +111,7 @@ Un produit est identifié avec un numéro de série qui respecte ce format : `PA
 
 Les lettres `PA  /  et  U` sont obligatoires.
 
-Écrire un `scanf` qui permet d'extraire les deux nombres (entier) du numéro de série. Dans cette exemple il devrait pouvoir extraire `135` et `78`.
+Écrire un `scanf` qui permet d'extraire les deux nombres (entier) du numéro de série. Dans cet exemple, il devrait pouvoir extraire `135` et `78`.
 
 ## Ex 8
 Modifier le code ci-dessous pour le rendre robuste en contrôlant le nombre de valeurs récupérées par le `scanf`.
@@ -243,7 +243,7 @@ int main()
     }
     else if( c1 >= 'A' && c1 <= 'Z' &&
         c2 >= 'A' && c2 <= 'Z' ){
-        printf("Vous avez entrez : %c et %c", c1, c2);
+        printf("Vous avez entré : %c et %c", c1, c2);
     }
     else{
         printf("Erreur caractère non valide\n");
