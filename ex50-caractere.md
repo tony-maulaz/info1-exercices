@@ -38,7 +38,7 @@ Donner une expression (sans utiliser de fonction) qui retourne `true` ou `1` si 
 char test = 'a';
 ```
 
-** Aide sur les valeur *booléene* **
+**Aide sur les valeur *booléenes***
 
 Pour rappel l'expression : `12 > 6` vaut `1` et `-4 > 0` vaut `0`
 
