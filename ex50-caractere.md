@@ -34,6 +34,22 @@ Donner une expression (sans utiliser de fonction) qui retourne `true` ou `1` si 
 
 Pour rappel l'expression : `12 > 6` vaut `1` et `-4 > 0` vaut `0`
 
+Exemple de code
+```C
+int i = 12;
+int val = 12 > 6;
+printf("Test 1 : %d\n, val);
+printf("Test 2 : %d\n, (i > 100) );
+printf("Test 3 : %d\n, (i==0) );
+```
+
+L'exécution du programme serait :
+```console
+Test 1 : 1
+Test 2 : 0
+Test 3 : 0
+```
+
 ```C
 char test = 'a';
 ```
