@@ -26,7 +26,7 @@ printf("Valeur 3: %c\n", c + (val3 - val1));
 ## Ex 2
 Donner une expression qui affiche le code ASCII de la variable `c`
 
-Exempe d'exxpression qui donne le double de la variable `test` : `(test * 2)`
+Exemple : Donner l'expression qui donne le double de la variable `test` : `(test * 2)`
 
 ```C
 char c = '2';
