@@ -50,8 +50,10 @@ int val = 122;
 ## Ex 5
 Réaliser un programme qui demande à un utilisateur de saisir un caractère en minuscule et ensuite le programme affiche le caractère en majuscule.
 
-Utiliser une fonction de la libraire `ctype.h` pour contrôler que la saisie est en minuscule.
+Utiliser une fonction de la libraire `ctype.h` pour contrôler que la saisie est en minuscule.<br/>
 Vous trouverez les fonctions sur la `Refcard` dans *Tests de classe de caractères*
+
+Afin de réaliser la transformation en majuscule, je vous conseille d'analyser la table ASCII : [lien](https://www.asciitable.com/)
 
 Exemple d'utilisation
 ```C
@@ -66,9 +68,9 @@ if( isalnum(c) ){
 
 Vous ne devez pas utiliser de fonction de `ctype.h` pour transformer le caractère.
 
-Si il y a une erreur sur la saisie, le programme retourne simplement `1`
+S'il y a une erreur sur la saisie, le programme retourne simplement `1`
 
-Exemple d'execution du programme :
+Exemple d'exécution du programme :
 ```console
 Veuillez entrer un caractère en minuscule :
 >u
@@ -80,11 +82,11 @@ Réaliser un programme qui demande à l'utilisateur de saisir trois caractères 
 
 Vous devez ensuite afficher les caractères dans l'ordre alphabétique.
 
-Si il y a une erreur sur la saisie, le programme retourne simplement `1`
+S'il y a une erreur sur la saisie, le programme retourne simplement `1`
 
 Exemple d'execution du programme :
 ```console
-Veuillez entrer trois caractères minuscule séparés par une virgule :
+Veuillez entrer trois caractères minuscules séparés par une virgule :
 >u,b,j
 Les caractères sont :
 1: b
