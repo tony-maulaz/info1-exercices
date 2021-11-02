@@ -99,10 +99,11 @@ int main(int argc, char* argv[]){
 
 # Ex 6
 Modifier la fonction `main` pour que le programme affiche les arguments uniquement si la conversion est possible et que le nombre d'arguments est correct.
-Dans le cas où il y a une erreur, le programme quitte en retournant la valeur `3`; 
 
-- Le premier argument et entier.
-- Le deuxième argument et double.
+Dans le cas où il y a une erreur, le programme quitte en retournant la valeur `3`. 
+
+- Le premier argument est entier.
+- Le deuxième argument est double.
 
 ```console
 ./app 12 34.69
@@ -197,20 +198,21 @@ La valeur 2 : 3
 
 int main(int argc, char* argv[]){
     
-    if( argc != 3 ) {
-        int val_i;
-        double val_d;
-        
-        if( sscanf(argv[1], "%d", &val_i) != 1 )
-            return 3;
-        
-        if( sscanf(argv[2], "%lf", &val_d) != 1 )
-            return 3;
-        
-        printf("Les valeurs sont\n");
-        printf("  - %d\n", val_i);
-        printf("  - %lf\n", val_d);
-    }
+    if( argc != 3 ) 
+        return 3;
+
+    int val_i;
+    double val_d;
+
+    if( sscanf(argv[1], "%d", &val_i) != 1 )
+        return 3;
+    
+    if( sscanf(argv[2], "%lf", &val_d) != 1 )
+        return 3;
+    
+    printf("Les valeurs sont\n");
+    printf("  - %d\n", val_i);
+    printf("  - %lf\n", val_d);
 
     return 0;
 }

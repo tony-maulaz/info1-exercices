@@ -152,9 +152,9 @@ Le message utilisateur doit être explicite.
 
 Vous devez utiliser **un** seul `scanf`.
 
-Récupérer les valeurs numériques dans des variables et les afficher
+Récupérer les valeurs numériques dans des variables et les afficher.
 
-Si la conversion en nombre n'est pas possible ou qu'il y a des erreurs, le programme retourne `2`
+Si la conversion en nombre n'est pas possible ou qu'il y a des erreurs, le programme retourne `2`.
 
 Vous devez contrôler que mois jour heure minute sont dans les limites :
 
@@ -266,7 +266,7 @@ int main()
     int ret = scanf("%c %c", &c1, &c2);
     
     if(ret != 2){
-        printf("Erreur sur le nombre d'entrée\n");
+        printf("Erreur sur le nombre d'entrées\n");
         return 2;
     }
     else if( c1 >= 'A' && c1 <= 'Z' &&
