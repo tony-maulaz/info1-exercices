@@ -16,3 +16,6 @@
 
 ## 50 - Caractères
 - [caractere.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex50-caractere.md)
+
+## 60 - Arguments
+- [arguments.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex60-arguments.md)
