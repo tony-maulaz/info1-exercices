@@ -2,7 +2,7 @@
 
 ## Ex 1
 Dans le prototype de la fonction suivante `int main(int argc, char* argv[])` :
-- A quoi correspond `argc` et quelle est la valeur minimun ?
+- A quoi correspond `argc` et quelle est la valeur minimum ?
 - A quoi correspond `argv` ?
 
 # Ex 2
@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
 ```
 
 # Ex 3
-Compléter la fonction `main` pour afficher le 3ème argument (valeur double) passé comme dans l'exemple ci-dessous :
+Compléter la fonction `main` pour afficher le 3e argument (valeur double) passé comme dans l'exemple ci-dessous :
 
 Pas de traitement d'erreur.
 
@@ -96,7 +96,7 @@ int main(int argc, char* argv[]){
 ```
 
 # Ex 6
-Modifier la fonction `main` pour que le programme affiche les arguments uniquement si la conversion est possible et que le nombre d'argument est correct.
+Modifier la fonction `main` pour que le programme affiche les arguments uniquement si la conversion est possible et que le nombre d'arguments est correct.
 Dans le cas où il y a une erreur, le programme quitte en retournant la valeur `3`; 
 
 - Le premier argument et entier.
@@ -128,8 +128,8 @@ Quel sont les valeurs des variables suivantes ?
 
 ## Solutions
 ### Ex 1
-- Le nombre d'argument passé (au minimun 1 car c'est le nom du programme)
-- Un tableau avec tout les arguments
+- Le nombre d'arguments passé (au minimum 1 car c'est le nom du programme)
+- Un tableau avec tous les arguments
 
 ### Ex 2
 ```c
@@ -205,7 +205,7 @@ int main(int argc, char* argv[]){
 ```
 
 ### Ex 7
-Quel sont les valeurs des variables suivantes ?
+Quelles sont les valeurs des variables suivantes ?
 
  Appel | `argc` | `argv[0]` | `argv[1]` | `argv[2]` | `argv[3]`
  ---|---|---|---|---|---
