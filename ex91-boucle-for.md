@@ -72,8 +72,8 @@ Après le code
 
 ## Ex 7
 ```C
-for( int i=0; i<100; i+=7){
-    printf("%d", i);
+for( int i=1; i<100; i+=7){
+    printf("%d\n", i);
 }
 ```
 
