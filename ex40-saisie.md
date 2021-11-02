@@ -145,6 +145,34 @@ Mois  :   06
 Année : 2021
 ```
 
+## Ex 11
+Réaliser un programme qui demande à l'utilisateur de saisir une date dans ce format : `02/06/2021 12:34`
+
+Le message utilisateur doit être explicite.
+
+Vous devez utiliser **un** seul `scanf`.
+
+Récupérer les valeurs numériques dans des variables et les afficher
+
+Si la conversion en nombre n'est pas possible ou qu'il y a des erreurs, le programme retourne `2`
+
+Vous devez contrôler que mois jour heure minute sont dans les limites :
+
+- 0 < mois <= 12
+- 0 < jours <= 31
+- 0 < année
+- 0 < heure <= 24
+- 0 < minute < 60
+
+Exemple d'affichage
+```console
+Jour   : 02
+Mois   : 06
+Année  : 2021
+Heure  : 12
+Minute : 34
+```
+
 ## Solutions
 ### Ex 1
 

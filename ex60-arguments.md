@@ -125,7 +125,7 @@ Quel sont les valeurs des variables suivantes ?
 | `./app 12 5 5.6 z` | | | | |
 | `./app test tout 23.4 6` | | | | |
 | `./app 2.6 foo/bar 5.6 8` | | | | |
-| `./app 0 .3 aa bb` | | | | |
+| `./app 0 .3 aa bb foo 5` | | | | |
 
 
 ## Solutions
@@ -162,35 +162,6 @@ int main(int argc, char* argv[]){
 int main(int argc, char* argv[]){
     int val;
     
-    if( argc >= 2 ) {
-        printf("Les valeurs sont\n");
-        sscanf(argv[1], "%d", &val);
-        printf("  - %d\n", val);
-    }
-
-    if( argc >= 3 )
-        sscanf(argv[2], "%d", &val);
-        printf("  - %d\n", val);
-    
-    if( argc >= 4 )
-        sscanf(argv[3], "%d", &val);
-        printf("  - %d\n", val);
-}
-```
-
-### Ex 5
-```console
-La valeur 1 : 1
-La valeur 2 : 3
-```
-
-### Ex 6
-```c
-#include <stdio.h>
-
-int main(int argc, char* argv[]){
-    int val;
-    
     printf("Argc %d\n", argc);
     
     if( argc >= 2 ) {
@@ -209,6 +180,38 @@ int main(int argc, char* argv[]){
         printf("  - %d\n", val);
     }
         
+    return 0;
+}
+
+```
+
+### Ex 5
+```console
+La valeur 1 : 1
+La valeur 2 : 3
+```
+
+### Ex 6
+```c
+#include <stdio.h>
+
+int main(int argc, char* argv[]){
+    
+    if( argc != 3 ) {
+        int val_i;
+        double val_d;
+        
+        if( sscanf(argv[1], "%d", &val_i) != 1 )
+            return 3;
+        
+        if( sscanf(argv[2], "%lf", &val_d) != 1 )
+            return 3;
+        
+        printf("Les valeurs sont\n");
+        printf("  - %d\n", val_i);
+        printf("  - %lf\n", val_d);
+    }
+
     return 0;
 }
 ```
