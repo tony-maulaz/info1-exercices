@@ -36,13 +36,24 @@ printf("%d\n", i);
 ```
 
 ## Ex 4
+Quel est l'affichage du programme suivant :
+```C
+char c  = 'e';
+while( c < 'u' ){
+    c++;
+}
+printf("%c\n", c);
+```
+
+
+## Ex 5
 Créer une fonction qui demande à l'utilisateur de saisir une valeur entière.
 
 Si la valeur saisie est incorrecte (non convertible), il faut demander à l'utilisateur de recommencer.
 
 Dès qu'une valeur est saisie, la fonction retourne cette valeur.
 
-## Ex 5
+## Ex 6
 Modifier la fonction de l'exercice `#4` afin d'ajouter une borne `min` et `max` pour la validation de la valeur.
 
 Il faut que la valeur saisie soit dans les bornes pour qu'elle soit valide.
@@ -58,7 +69,7 @@ int ask_int(int min, int max){
 ```
 
 # Solutions
-## Ex 4
+## Ex 5
 **Ne pas oublier de vider le buffer**
 
 ```C
@@ -119,7 +130,7 @@ int main()
 }
 ```
 
-## Ex 5
+## Ex 6
 
 ```C
 #include <stdio.h>
