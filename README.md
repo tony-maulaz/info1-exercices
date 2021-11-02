@@ -19,3 +19,6 @@
 
 ## 60 - Arguments
 - [arguments.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex60-arguments.md)
+
+## 70 - Types
+- [type.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex70-type.md)
