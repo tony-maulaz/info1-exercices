@@ -50,6 +50,8 @@ Compléter la fonction `main` pour que le programme ci-dessous fonctionne même 
 
 Les mauvais types d'arguments ne sont pas gérés.
 
+Il peut y avoir au maximum 3 valeurs numériques.
+
 ```console
 ./app 1
 Les valeurs sont
