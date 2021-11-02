@@ -22,3 +22,9 @@
 
 ## 70 - Types
 - [type.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex70-type.md)
+
+## 80 - Fonctions simples
+- [fonctions-simples.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex80-fonctions-simples.md)
+
+## 90 - Boucle while
+- [boucle-while.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex90-boucle-while.md)

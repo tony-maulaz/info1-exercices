@@ -281,3 +281,45 @@ int main()
     return 0;
 }
 ```
+
+## Ex 11
+```C
+#include <stdio.h>
+
+int exemple_date(){
+    printf("\n\033[1;34mExemple de date\n\033[0;30m");
+
+    printf("Veuillez entrer une date dans le format suivant : dd/mm/yyyy hh:mm\n>");
+
+    int year, month, day, hour, minute;
+    // utilise const car la variable ne peut pas changer
+    const int ret = scanf( "%d/%d/%d %d:%d", &day, &month, &year, &hour, &minute);
+
+    // Test le nombre de valeur converties par le scanf
+    if( ret < 5 )
+    {
+        printf("Erreur de saisie");
+        return 2;
+    }
+
+    if( year < 0 ||
+        month <= 0 || month > 12 ||
+        day <= 0 || day > 31 ||
+        hour <= 0 || hour > 24 ||
+        minute <= 0 || minute >= 60 )
+    {
+        printf("Erreur de saisie nombre invalide");
+        return 2;
+    }
+
+    // on utilise une constante pour la largeur du texte
+    const int length = 5;
+    printf("Year    : %*d\n", length, year);
+    printf("Month   : %*d\n", length, month);
+    printf("Day     : %*d\n", length, day);
+    printf("Hour    : %*d\n", length, hour);
+    printf("Minute  : %*d\n", length, minute);
+
+    return 0;
+}
+```
