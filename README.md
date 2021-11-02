@@ -28,3 +28,6 @@
 
 ## 90 - Boucle while
 - [boucle-while.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex90-boucle-while.md)
+
+## 91 - Boucle for
+- [boucle-for.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex91-boucle-for.md)
