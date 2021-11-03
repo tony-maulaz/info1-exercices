@@ -68,6 +68,13 @@ int ask_int(int min, int max){
 }
 ```
 
+## Ex 7
+Créer une boucle `while` qui affiche les lettres de `A` à `Z` séparées par une `,`
+
+```console
+A,B,C,D...X,Y,Z
+```
+
 # Solutions
 ## Ex 5
 **Ne pas oublier de vider le buffer**
@@ -156,5 +163,17 @@ int main()
 {
     printf("%d", ask_int(4, 9));
     return 0;
+}
+```
+
+## Ex 7
+```C
+char c = 'A'; 
+while(c <= 'Z'){    
+    printf("%c",c);
+
+    if( c != 'Z')
+        printf(",");
+    c++;
 }
 ```
