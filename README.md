@@ -31,3 +31,9 @@
 
 ## 91 - Boucle for
 - [boucle-for.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex91-boucle-for.md)
+
+## 92 - Boucle
+- [boucle.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex92-boucle.md)
+
+## 100 - Switch
+- [switch.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex100-switch.md)
