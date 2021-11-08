@@ -15,11 +15,18 @@ PrintReal( 1.45, 2) // => Affichage : 1.45
 ```
 
 ## Ex 3
-Déclarer une fonction de type `double`(cela indique le type de la valeur de retour) qui retourne la moyenne de deux entiers passés en paramètres.
+Définir une fonction de type `double`(cela indique le type de la valeur de retour) qui retourne la moyenne de deux entiers passés en paramètres.
 
 ## Ex 4
-Déclarer une fonction qui retourne la valeur `max` entre 3 entiers passés en paramètres.
+Définir une fonction qui retourne la valeur `max` entre 3 entiers passés en paramètres.
 
+## Ex 5
+Définir une fonction de type `int` qui retourne la valeur absolue d'une valeur entière passée en paramètre.
+
+## Ex 6 
+Écrire une fonction qui prend un caractère comme paramètre d'entrée. Si le caractère est compris dans `[a-z]`, la fonction retourne le caractère en majuscule sinon elle retourne le caractère passé en paramètre.
+
+Vous ne devez pas utiliser de fonction dans `ctype.h` pour transformer le caractère.
 
 # Solutions
 ## Ex 1
@@ -64,5 +71,27 @@ int max_3_int(int a, int b, int c){
       int max_a_b = max(a,b);
       return max( max_a_b, c );
     */
+}
+```
+
+## Ex 5
+```C
+int AbsInt(int val){
+    if( val <= 0 )
+        return val * -1;
+    else
+        return val;
+}
+```
+
+## Ex 6
+```C
+char ToUpper(char c){
+    if( c >= 'a' && c <= 'z' ){
+        return c - ('a' - 'A');
+    }
+    else{
+        return c;
+    }
 }
 ```
