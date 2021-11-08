@@ -14,14 +14,14 @@ double val_d = 1.2;
 
 Expression | Type | Valeur
 ---|---|---
-2 + 3 |
-4.5 * val_i |
-4 % 2 |
-4 > 3 |
-c + 4 |
-c + val_d |
-val_i > 3 && val_d < 0.0 |
-1/2 + 3.0 * 1 |
+2 + 3 | | 
+2.5 * val_i | | 
+4 % 3 | | 
+4 > 3 | |
+c + 4 | |
+c + val_d | | 
+val_i > 3 && val_d < 0.0 | |
+1/2 + 3.0 + 5/7 | |
 
 ## Ex 2
 Il y a deux variables déclarées :

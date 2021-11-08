@@ -15,7 +15,7 @@ PrintReal( 1.45, 2) // => Affichage : 1.45
 ```
 
 ## Ex 3
-Déclarer une fonction qui retourne la moyenne (`double`) de deux entiers passés en paramètres.
+Déclarer une fonction de type `double`(cela indique le type de la valeur de retour) qui retourne la moyenne de deux entiers passés en paramètres.
 
 ## Ex 4
 Déclarer une fonction qui retourne la valeur `max` entre 3 entiers passés en paramètres.
