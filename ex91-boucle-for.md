@@ -9,7 +9,7 @@ for( k=2; k<100; k++){
 ```
 
 ## Ex 2
-Est-ce que la condition (3ème expression) est exécutée avant le code ou après ?
+Est-ce que la 3ème expression est exécutée avant le code ou après ?
 
 ## Ex 3
 Quel est l'affichage du programme suivant :
