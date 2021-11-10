@@ -1,5 +1,7 @@
 # Fonctions simples
 
+> **Attention :** Pour ces exercices, testez vos fonctions avec [onlinegdb](https://www.onlinegdb.com)
+
 ## Ex 1
 Déclarer une fonction `Print` qui permet d'afficher `Bonjour` sur la console.
 
