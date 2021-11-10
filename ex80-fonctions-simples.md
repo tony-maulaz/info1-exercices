@@ -44,7 +44,7 @@ Vous ne devez pas utiliser de fonction dans `ctype.h` pour transformer le caract
 Le `void` comme paramètre est important.
 
 ```C
-void Afficher(void){
+void Print(void){
     printf("Bonjour")
 }
 ``` 
