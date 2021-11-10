@@ -3,6 +3,17 @@
 ## Ex 1
 Déclarer une fonction `Print` qui permet d'afficher `Bonjour` sur la console.
 
+Avec cette fonction, le code suivant doit fonctioner
+```C
+#include <stdio.h>
+
+// la fonction...
+
+int main(){
+    Print();
+}
+```
+
 ## Ex 2
 Déclarer une fonction `PrintReal` qui permet d'afficher un nombre réel.
 - Premier paramètre : Le nombre (`double`)
