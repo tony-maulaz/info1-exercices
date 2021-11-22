@@ -25,6 +25,7 @@
 
 ## 80 - Fonctions simples
 - [fonctions-simples.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex80-fonctions-simples.md)
+- [fonctions-reference.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex81-fonctions-reference.md)
 
 ## 90 - Boucle while
 - [boucle-while.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex90-boucle-while.md)
