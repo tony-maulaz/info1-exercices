@@ -162,6 +162,25 @@ int main()
 }
 ```
 
+## Ex 9
+Quel est l'affichage du programme suivant
+```C
+#include <stdio.h>
+
+void fonc(double*  val){
+    printf("Val : %d\n", val);
+    printf("Val* : %lf", *val);
+}
+
+int main()
+{
+    int val = 10;
+    fonc(&val);
+
+    return 0;
+}
+```
+
 
 ## Solutions
 ### Ex 1
