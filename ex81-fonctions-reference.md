@@ -10,7 +10,7 @@ Cette fonction modifie le paramètre passé afin d'avoir le triple de la valeur
 // exemple d'appel de la fonction
 int val = 2;
 triple(...);
-printf("Res : %d", *val);
+printf("Res : %d", val);
 ```
 
 ```console
