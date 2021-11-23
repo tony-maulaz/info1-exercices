@@ -116,6 +116,52 @@ Res tri : i1=2, i2=6, i3=12
 - Si `val` est plus petit que `min`, `val` prend la valeur de `min`
 - Sinon `val` reste inchangée.
 
+## Ex 7
+Écrire une fonction qui cherche le plus grand multiple commun entre deux nombres.
+
+Le prototype de la fonction est : `bool pgmc(int val1, int val2, int* res);`
+
+Utiliser les boucles `for`.
+
+Si un multiple différent de `1` existe, la fonction retourne `true` sinon `false`.
+
+La valeur du plus grand multiple serra retourné au travers du paramètre `res`.
+
+## Ex 8 
+Quel est l'affichage du programme suivant
+```C
+#include <stdio.h>
+
+void afficher(double val, int* nbr){
+    printf("Val %d : %.2lf\n", *nbr, val);
+    (*nbr)++;
+}
+
+void func1(double* val, int* nbr){
+    
+    int cpt = 0;
+    while(*val > 0){
+        *val -= 10;
+        cpt++;
+    }
+    
+    afficher(*val, nbr);
+}
+
+
+int main()
+{
+    int valeur_nbr = 0;
+    double val = 56.0;
+    
+    afficher(25, &valeur_nbr);
+    func1(&val, &valeur_nbr);
+    afficher(val, &valeur_nbr);
+
+    return 0;
+}
+```
+
 
 ## Solutions
 ### Ex 1
@@ -277,3 +323,44 @@ int main(int argc, char* argv[])
     printf("Res : %d\n", val);    
 }
 ```
+
+### Ex 7
+```C
+#include <stdbool.h>
+
+bool pgmc(int val1, int val2, int* res){
+    int max = val1 > val2 ? val1 : val2;
+    
+    for(int i=max; i>1; i--){
+        if( (val1 % i == 0 && val2 % i == 0) ){
+            *res = i;
+            return true;
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    int val1 = 489;
+    int val2 = 123;
+    int res;
+    if( pgmc(val1, val2, &res) )
+        printf("Test 1 : val1=%d / val2=%d / pgmc=%d\n", val1, val2, res);
+
+    val1 = 123*7;
+    val2 = 123;
+    if( pgmc(val1, val2, &res) )
+        printf("Test 1 : val1=%d / val2=%d / pgmc=%d\n", val1, val2, res);
+
+    val1 = 85*17;
+    val2 = 85*59;
+    if( pgmc(val1, val2, &res) )
+        printf("Test 1 : val1=%d / val2=%d / pgmc=%d\n", val1, val2, res);        
+
+    return 0;
+}
+```
+
+### Ex 8
+???
