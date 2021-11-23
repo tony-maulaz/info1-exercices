@@ -83,7 +83,6 @@ int main(int argc, char *argv[])
 ## Ex 4
 Définir une fonction `swap` qui intervertit deux valeurs entières passées en paramètre.
 
-
 ## Ex 5
 Écrire une fonction `tri` de type `void` qui prend trois entiers en entrée.
 Une fois la fonction terminée, il faut que les valeurs soient triées par ordre croissant.
@@ -119,6 +118,54 @@ Res tri : i1=2, i2=6, i3=12
 
 
 ## Solutions
+### Ex 1
+```C
+#include <stdio.h>
+
+void triple(int* val){
+    *val = 3*(*val);
+}
+
+int main()
+{
+    int demo = 2;
+    triple(&demo);
+    printf("Res : %d", demo);
+    return 0;
+}
+```
+
+### Ex 2
+```C
+#include <stdio.h>
+#include <stdbool.h>
+
+bool to_upper(char* c){
+    if( *c >= 'a' && *c <= 'z' ){
+        *c -= ('a'-'A');
+        return true;
+    }
+    return false;
+}
+
+int main()
+{
+    char demo = 'a';
+    bool res = to_upper(&demo);
+    printf("Res : %d - Char : %c\n", res, demo);
+    
+    demo = 'C';
+    res = to_upper(&demo);
+    printf("Res : %d - Char : %c\n", res, demo);
+    
+    demo = '1';
+    res = to_upper(&demo);
+    printf("Res : %d - Char : %c\n", res, demo);
+    
+    return 0;
+}
+```
+
 ### Ex 3
 ```BASH
 Q2 = 17
@@ -136,4 +183,97 @@ Q10 = 3
 Q11 i1=4
 Q12 d1=4.500000
 Q13 res=8
+```
+
+### Ex 4
+```C
+#include <stdio.h>
+
+void swap(int* a, int* b){
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+int main()
+{
+    int v1 = 12;
+    int v2 = 45;
+    
+    printf("V1 : %d - V2 : %d\n", v1, v2);
+    swap(&v1, &v2);
+    printf("V1 : %d - V2 : %d\n", v1, v2);
+    
+    return 0;
+}
+```
+
+### Ex 5
+```C
+#include <stdio.h>
+
+void swap(int* i1, int* i2){
+    int tmp = *i1;
+    *i1 = *i2;
+    *i2 = tmp;
+}
+
+void tri(int* i1, int* i2, int* i3){
+    if( *i1 > *i2) swap(i1, i2);
+    if( *i1 > *i3) swap(i1, i3);
+    if( *i2 > *i3) swap(i2, i3);
+}
+
+int main(int argc, char* argv[])
+{
+    int i1=1, i2=3, i3=2;
+    tri(&i1, &i2, &i3);
+    printf("i1=%d  i2=%d  i3=%d\n", i1, i2, i3);
+    
+    i1=7, i2=3, i3=1;
+    tri(&i1, &i2, &i3);
+    printf("i1=%d  i2=%d  i3=%d\n", i1, i2, i3);
+    
+    i1=10, i2=20, i3=30;
+    tri(&i1, &i2, &i3);
+    printf("i1=%d  i2=%d  i3=%d\n", i1, i2, i3);
+    
+    i1=6, i2=6, i3=6;
+    tri(&i1, &i2, &i3);
+    printf("i1=%d  i2=%d  i3=%d\n", i1, i2, i3);    
+}
+```
+
+### Ex 6
+```C
+#include <stdio.h>
+
+void check(int* val, int min, int max){
+    *val = *val >= max ? max : *val;
+    *val = *val <= min ? min : *val;
+}
+
+int main(int argc, char* argv[])
+{
+    int min = 0;
+    int max = 12;
+    int val = 1;
+    printf("Test 1 : min=%d / max=%d / val=%d ", min, max,val);
+    check(&val, min, max);
+    printf("Res : %d\n", val);
+ 
+    min = 10;
+    max = 12;
+    val = 1;
+    printf("Test 2 : min=%d / max=%d / val=%d ", min, max,val);
+    check(&val, min, max);
+    printf("Res : %d\n", val);
+    
+    min = -6;
+    max = 12;
+    val = 145;
+    printf("Test 2 : min=%d / max=%d / val=%d ", min, max,val);
+    check(&val, min, max);
+    printf("Res : %d\n", val);    
+}
 ```
