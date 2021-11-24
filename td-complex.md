@@ -1,4 +1,4 @@
-# Ex 1 - Complex
+# Nombre complexe
 
 Créer un programme qui demande à l'utilisateur de saisir un nombre complexe.
 - Le nombre sera saisi en notation algébrique.
