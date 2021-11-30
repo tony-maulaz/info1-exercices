@@ -114,3 +114,70 @@ printf("\n");
 
 ## Solution
 [onlinegdb](https://www.onlinegdb.com/)
+
+### Ex 4
+```C
+#include <stdio.h>
+#include <stdbool.h>
+
+void afficher(int b1, int b2){
+    int i=b1;
+    
+    if( b1 > b2 )
+        return;
+    
+    while( true ){
+        printf("%d", i);
+        i += 3;
+        if( i <= b2 ){
+            printf(",");
+        }
+        else{
+           return; 
+        }
+    }
+}
+
+int main()
+{
+    afficher(9, 4);
+    printf("\n");
+    afficher(3, 11);
+    printf("\n");
+    afficher(6, 9);
+    return 0;
+}
+```
+
+### Ex 5
+```C
+#include <stdio.h>
+#include <stdbool.h>
+
+void afficher(int b1, int b2, int inc, char sep){
+    int start = b1 > b2 ? b2 : b1;
+    const int stop = b1 > b2 ? b1 : b2;
+    
+    while( true ){
+        printf("%d", start);
+        start += inc;
+        if( start <= stop ){
+            printf("%c", sep);
+        }
+        else{
+           return; 
+        }
+    }
+}
+
+int main()
+{
+    afficher(9, 4, 2, '-');
+    printf("\n");
+    afficher(-8, 5, 3, ',');
+    printf("\n");
+    afficher(5, 1, 10, ' ');
+    printf("\n");
+    return 0;
+}
+```
