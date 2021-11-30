@@ -3,9 +3,9 @@ Créer un programme qui permet d'afficher des valeurs entre deux bornes.
 
 Les bornes sont passées par les arguments.
 
-Le premier argument permet de choisir l'opération a effectuer
+Le premier argument permet de choisir l'opération à effectuer
 - `a` : Afficher les valeurs entre les deux bornes avec un incrément de 1.
-  - il est possible que la première bornes soit plus grande que la deuxième.
+  - il est possible que la première borne soit plus grande que la deuxième.
   - dans tous les cas, les valeurs seront affichées dans l'ordre croissant.
 - `b` : Afficher les valeurs entre les deux bornes avec un incrément configurable
   - l'incrément se trouve dans le deuxième argument.
