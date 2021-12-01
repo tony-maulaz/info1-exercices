@@ -43,14 +43,25 @@ char c1[] = c;
 La fonction ci-dessous doit copier les valeurs de `c` dans `c1`
 
 ```c
-void copy(...){
-  ...
+#include <stdio.h>
+
+void copy(){
 }
 
-int c[] = {1,2,3,4,5};
-int c1[5];
+int main(int argc, char* argv[])
+{
+    int c[] = {1,2,3,4,5};
+    int c1[3] = {0};
 
-copy(...);
+    size_t s1 = sizeof(c) / sizeof(c[0]);
+    size_t s2 = sizeof(c1) / sizeof(c1[0]);
+
+    copy();
+
+    for(size_t i=0; i<s1; i++){
+        printf("Tab C1[ %ld ] : %d\n", i, c1[i]);
+    }
+}
 ```
 
 ## Ex 5
@@ -138,6 +149,8 @@ Non, on ne peut pas copier un tableau avec l'opérateur d'assignation.
 ## Ex 4
 
 ```c
+#include <stdio.h>
+
 void copy(const int c[], int c1[], size_t size){
     for(size_t i=0; i<size; i++){
         c1[i] = c[i];
@@ -147,8 +160,19 @@ void copy(const int c[], int c1[], size_t size){
 int main(int argc, char* argv[])
 {
     int c[] = {1,2,3,4,5};
-    int c1[5] = {0};
-    copy(c, c1, 3);
+    int c1[3] = {0};
+
+    size_t s1 = sizeof(c) / sizeof(c[0]);
+    size_t s2 = sizeof(c1) / sizeof(c1[0]);
+    if( s2 < s1 )
+        return 1;
+    copy(c, c1, s1);
+
+    for(size_t i=0; i<s1; i++){
+        printf("Tab C1[ %ld ] : %d\n", i, c1[i]);
+    }
+
+    return 0;
 }
 ```
 
