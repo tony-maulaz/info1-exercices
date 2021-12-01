@@ -34,7 +34,7 @@ char c1[] = c;
 
 ## Ex 2
 
-Ecrire une fonction qui copie un tableau 
+Écrire une fonction qui copie un tableau 
 
 La fonction ci-dessous doit copier les valeurs de `c` dans `c1`
 
@@ -103,7 +103,7 @@ void mean(...){
 int main(void)
 {
     int tab[] = {1,2,3,4,5,6};
-    int size = 6;
+    size_t size = 6;
     int max_tab;
     double mean_tab;
     mean(...);
@@ -141,8 +141,8 @@ Non, on ne peut pas copier un tableau avec l'opérateur d'assignation.
 ## Ex 2
 
 ```c
-void copy(const int c[], int c1[], int size){
-    for(int i=0; i<size; i++){
+void copy(const int c[], int c1[], size_t size){
+    for(size_t i=0; i<size; i++){
         c1[i] = c[i];
     }
 }
@@ -173,10 +173,10 @@ On accède à un indice du tableau qui est en dehors du tableau.
 ```c
 #include <stdio.h>
 
-void mean(int tab[], int size, int* max, double* mean){
+void mean(int tab[], size_t size, int* max, double* mean){
     double sum = 0.;
     *max = 0;
-    for(int i=0; i<size; i++){
+    for(size_t i=0; i<size; i++){
         sum += tab[i];
         if( *max < tab[i] )
             *max = tab[i];
