@@ -39,3 +39,6 @@
 
 ## 100 - Switch
 - [switch.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex100-switch.md)
+
+## 110 - Tableau
+- [tableau.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex110-tableau.md)
