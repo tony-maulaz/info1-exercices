@@ -2,6 +2,26 @@
 
 ## Ex 1
 
+Quel est la taille des tableaux suivants et quel est la valeur du tableau
+
+```c
+Exemple
+1.0 : int tab[2] = {3,4}; : taille 2, [3,4]
+
+1.1 : int tab[4];
+1.2 : double tab[7];
+1.3 : char tab[];
+1.4 : int tab[3] = {1};
+1.5 : int tab[3] = {1,2};
+1.6 : int tab[3] = {0};
+1.7 : int tab[6] = {0,3,6};
+1.8 : int tab[] = {0};
+1.9 : int tab[] = {4,5,6};
+1.10: char tab[4] = {'a','b'};
+```
+
+## Ex 2
+
 Quel est l'affichage du programme suivant
 
 ```c
@@ -14,7 +34,7 @@ for(int i = 0; i<6; i++){
 }
 ```
 
-## Ex 2
+## Ex 3
 
 Quel est l'erreur du programme suivant
 
@@ -24,7 +44,7 @@ tab[1] = 4;
 tab[6] = 2;
 ```
 
-## Ex 3
+## Ex 4
 
 - Faire un tableau de `10` `char`.
 - Initialiser le tableau avec des `espaces`.
@@ -38,7 +58,7 @@ Exemple de valeur dans le tableau
 1 => 'e'
 ```
 
-## Ex 4
+## Ex 5
 
 ```c
 int tab_i[] = {1, 2, 3};
@@ -53,7 +73,7 @@ Quel est le type de `tab_i[1] > tab_d[0]` :
 Quel est le type de `tab_i[0] & tab_i[1]` :
 
 
-## Ex 5
+## Ex 6
 
 Quel est l'affichage de 
 
@@ -69,7 +89,7 @@ else
     printf("Bar");
 ```
 
-## Ex 6
+## Ex 7
 
 Quel est l'affichage de 
 
@@ -92,6 +112,20 @@ for( int i = 0; i < 10; i++ ){
 ## Solutions
 
 ### Ex 1
+```connsole
+1.1 : taille = 4 ,[?,?,?,?]
+1.2 : taille = 7 ,[?,?,?,?,?,?,?]
+1.3 : error
+1.4 : taille = 3 ,[1,0,0]
+1.5 : taille = 3 ,[1,2,0]
+1.6 : taille = 3 ,[0,0,0]
+1.7 : taille = 6 ,[0,3,6,0,0,0]
+1.8 : taille = 1 ,[0]
+1.9 : taille = 3 ,[4,5,6]
+1.10: taille = 4 ,['a','b',0,0]
+```
+
+### Ex 2
 
 ```console
 ind = 0 - val = 0
@@ -102,11 +136,11 @@ ind = 4 - val = 0
 ind = 5 - val = 0
 ```
 
-### Ex 2
+### Ex 3
 
 Ici l'indice `6` n'existe pas car la taille du tableau est de `6`.
 
-### Ex 3
+### Ex 4
 
 ```c
 char tab[10];
@@ -130,7 +164,7 @@ for( int i = 0; i<10; i++){
 }
 ```
 
-### Ex 4
+### Ex 5
 
 Quel est le type de `tab_i[1] * tab_d[0]` : double
 
@@ -138,12 +172,12 @@ Quel est le type de `tab_i[1] > tab_d[0]` : bool
 
 Quel est le type de `tab_i[0] & tab_i[1]` : int
 
-### Ex 5
+### Ex 6
 ```console
 Bar
 ```
 
-### Ex 6
+### Ex 7
 ```console
 val=0
 val=0
