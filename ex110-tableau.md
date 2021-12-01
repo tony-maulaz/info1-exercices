@@ -95,15 +95,17 @@ Quel est l'affichage de
 
 ```c
 int tab[10];
+const size_t size = sizeof(tab) / sizeof(tab[0]);
+printf("Size : %ld\n", size);
 
-for( int i = 0; i < 10; i++ ){
+for( int i = 0; i < size; i++ ){
     if( i % 2 == 0 )
         tab[i] = i;
     else
         tab[i] = 0;
 }
 
-for( int i = 0; i < 10; i++ ){
+for( int i = 0; i < size; i++ ){
     printf("val=%d\n", tab[i]);
 }
 ```
