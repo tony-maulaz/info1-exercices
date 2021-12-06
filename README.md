@@ -43,5 +43,9 @@
 ## 110 - Tableau 1
 - [tableau.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex110-tableau.md)
 
-## 111 - Tableau 2
-- [tableau.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex111-tableau.md)
+## 111 - Sizeof
+- [sizeof.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex111-sizeof.md)
+
+## 112 - Tableau 2
+- [tableau.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex112-tableau.md)
+
