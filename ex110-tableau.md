@@ -181,6 +181,7 @@ Bar
 
 ### Ex 7
 ```console
+Size : 10
 val=0
 val=0
 val=2

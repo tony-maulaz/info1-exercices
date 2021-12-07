@@ -42,6 +42,10 @@ char c1[] = c;
 
 La fonction ci-dessous doit copier les valeurs de `c` dans `c1`
 
+Si la taille du tableau de destination est trop petite, le programme est fermé.
+
+Si la taille du tableau source est plus petite que la destination, uniquement les valeurs du tableau source sont copiées.
+
 ```c
 #include <stdio.h>
 
@@ -66,7 +70,7 @@ int main(int argc, char* argv[])
 
 ## Ex 5
 
-Quel est le danger de la fonction développée à l'ex 2 ?
+Quel est le danger de la fonction développée à l'ex 4 ?
 
 ## Ex 6
 
@@ -81,7 +85,7 @@ tab[2] = 0.0;
 
 Écrire une fonction qui calcule la valeur `moyenne` des éléments du tableau. 
 
-Cette fonction doit aussi retourner la valeur `max` qui est dans le tableau. 
+Cette fonction doit aussi retourner la valeur `max` qui est dans le tableau.
 
 Cette fonction n'a pas de valeur de retour, c'est uniquement des paramètres.
 
@@ -186,10 +190,11 @@ On accède à un indice du tableau qui est en dehors du tableau.
 ## Ex 7
 ```c
 #include <stdio.h>
+#include <limits.h>
 
 void mean(int tab[], size_t size, int* max, double* mean){
     double sum = 0.;
-    *max = 0;
+    *max = INT_MIN;
     for(size_t i=0; i<size; i++){
         sum += tab[i];
         if( *max < tab[i] )
