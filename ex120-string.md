@@ -45,7 +45,17 @@ int main()
     printf("Text 5 : %s\n", text5);
     printf("Sizeof 5 : %ld\n", sizeof(text5));
     printf("Strlen 5 : %ld\n\n", strlen(text5));
-    
+
+    char text6[] = "Foo Bar";
+    printf("Text 6 : %s\n", &text6[2]);
+    printf("Sizeof 6 : %ld\n", sizeof(text6[2]));
+    printf("Strlen 6 : %ld\n\n", strlen(&text6[2]));
+
+    char text7[] = "Hello\n";
+    printf("Text 7 : %s\n", &text7[2]);
+    printf("Sizeof 7 : %ld\n", sizeof(text7[2]));
+    printf("Strlen 7 : %ld\n\n", strlen(&text7[2]));
+
     return 0;
 }
 ```
