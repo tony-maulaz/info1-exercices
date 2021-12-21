@@ -51,3 +51,6 @@
 
 ## 120 - String
 - [string.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex120-string.md)
+
+## 130 - Incréments
+- [increment.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex130-increments.md)
