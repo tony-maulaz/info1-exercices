@@ -15,7 +15,7 @@ printf("Val 2 : %d\n", b);
 ## Ex 2
 Quel est l'affichage du code suivant ?
 ```C
-int b;
+int b=0;
 while( ++b < 10 ){}
 printf("Val b : %d",b);
 ```
