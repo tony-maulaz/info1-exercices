@@ -498,7 +498,7 @@ int main(int argc, char* argv[])
     fgets(text, SIZE, stdin);
 
     const int l = strlen(text);
-    if( text[l-1] == '\n' )
+    if( l > 0 && text[l-1] == '\n' )
         text[l-1] = '\0';
 
     int occurrence[NBR_CHAR] = {0};
