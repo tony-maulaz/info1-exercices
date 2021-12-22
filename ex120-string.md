@@ -490,11 +490,12 @@ abc
 
 ## Ex 10
 ```c
+#define SIZE 80
 int main(int argc, char* argv[])
 {
-    char text[81];
+    char text[SIZE];
     printf("Veuillez saisir un texte : ");
-    fgets(text, 80, stdin);
+    fgets(text, SIZE, stdin);
 
     const int l = strlen(text);
     if( text[l-1] == '\n' )
