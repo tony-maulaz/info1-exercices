@@ -54,3 +54,6 @@
 
 ## 130 - Incréments
 - [increment.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex130-increments.md)
+
+## 140 - Opérateurs
+- [operateurs.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex140-operators.md)
