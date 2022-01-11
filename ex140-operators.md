@@ -41,6 +41,22 @@ Le numéro du bit est passé en paramètre.
 
 Le prototype de la fonction est : `void set_bit(int* value, int bit_num)`
 
+## Ex 6
+Donner une expression qui inverse le bit #0 de la variable `val`.
+
+## Ex 7
+Donner une expression qui inverse le bit #0 et le bit #2 de la variable `val`.
+
+## Ex 8
+Donner une expression qui force les bits #1 et #2 de la variable `val` à `1`.
+
+## Ex 9
+Donner une expression qui force les bit #2 et #3 de la variable `val` à `0`.
+
+## Ex 10
+Donner une expression qui retourne `true` si les bit #1 et #3 de la variable `val` sont à `1` sinon elle retourne `false`.
+
+
 ## Solutions
 ### Ex 1
 
@@ -67,4 +83,33 @@ h) `0x4 | 0x3 = 7`
 void set_bit(int* val, int nbr){
     *val = (*val) | (0x1 << nbr);
 }
+```
+
+### Ex 6
+```C
+val ^= 1
+```
+
+### Ex 7
+```C
+val ^= 5
+```
+
+### Ex 8
+```C
+val |= 6
+```
+
+### Ex 9
+```C
+val &= ~12
+
+// ou
+
+val &= ~0xC
+```
+
+### Ex 10
+```C
+val & 0xA == 0xA
 ```
