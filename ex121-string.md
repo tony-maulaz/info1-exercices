@@ -2,11 +2,9 @@
 
 ## Ex 1
 
-Écrire une fonction qui prend une chaîne de caractère en entrée.
-
-Cette fonction convertit tous les caractères minuscules en majuscule.
-
-Il peut y avoir des caractères spéciaux dans le texte.
+Écrire une fonction qui prend une chaîne de caractère en entrée.  
+Cette fonction convertit tous les caractères minuscules en majuscule.  
+Il peut y avoir des caractères spéciaux dans le texte.  
 
 ```c
 int main(){
@@ -21,7 +19,7 @@ bonjour 12 !
 
 ## Ex 2
 
-Écrire une fonction qui test si une chaîne de caractères passé en paramètre est un palindrome.  
+Écrire une fonction qui teste si une chaîne de caractères passée en paramètre est un palindrome.  
 Cette fonction est de type `bool`.  
 Cette fonction est insensible à la casse.  
 
@@ -47,5 +45,9 @@ Sugus : C'est un palindrome
 # Solutions
 
 ## Ex 1
+```C
+```
+
+## Ex 2
 ```C
 ```

@@ -381,19 +381,6 @@ int main(void)
 }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Solutions
 
 ## Ex 1
