@@ -49,8 +49,12 @@
 ## 112 - Tableau 2
 - [tableau.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex112-tableau.md)
 
-## 120 - String
+## 12X - String
+### 120 - String
 - [string.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex120-string.md)
+### 121 - String fonctions
+- [string.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex121-string.md)
+
 
 ## 130 - Incréments
 - [increment.md](https://github.com/tony-maulaz/info1-exercices/blob/main/ex130-increments.md)
