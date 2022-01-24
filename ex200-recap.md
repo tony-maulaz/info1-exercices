@@ -77,3 +77,51 @@ Quelle est la vitesse maximale de l'objet ?
 Combien de temps met l'objet pour tomber de `500 m` ?
 
 Après combien de temps la vitesse de l'objet est stable ?
+
+
+
+# Retournement
+
+Un programme contient un tableau de chaînes de caractères. Il faut les afficher verticalement.
+
+Le tableau a une capacité de 5 chaînes de caractères pouvant contenir 20 caractères chacune.
+
+Compléter la fonction `affichage`
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+#define NBR_STRING 5
+#define MAX_CHAR 20
+
+void affichage(char txt[][MAX_CHAR]){
+
+}
+
+int main()
+{
+    printf("Affichage\n\n");
+    
+    char txt[NBR_STRING][MAX_CHAR] = { "Test", "Hello", "Super", "A", "Bonjour" };
+
+    aff(txt);
+
+    return 0;
+}
+```
+
+Exemple d'affichage
+```console
+Affichage
+
+             B 
+             o 
+    H  S     n 
+ T  e  u     j 
+ e  l  p     o 
+ s  l  e     u 
+ t  o  r  A  r 
+---------------
+ 4  5  5  1  7 
+ ```
