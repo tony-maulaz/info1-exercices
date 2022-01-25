@@ -65,7 +65,7 @@ Quelle distance il peut parcourir en partant avec 50 litres de carburant.
 
 # Chute 
 
-Un objet de 80 kg et lâché avec une vitesse initiale nulle.
+Un objet de 80 kg est lâché avec une vitesse initiale nulle.
 
 Sa force de frottement vaut `F = k * v`  
 avec `k=34`
