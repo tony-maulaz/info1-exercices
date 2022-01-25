@@ -64,7 +64,7 @@ La masse du véhicule est de 1500 kg plus le carburant.
 
 La masse volumique du carburant est de `1500 [kg/m3]`
 
-Quelle distance il peut parcourir en partant avec 50 litres de carburant.
+Quelle distance peut-il parcourir en partant avec 50 litres de carburant.
 
 
 # Chute 
