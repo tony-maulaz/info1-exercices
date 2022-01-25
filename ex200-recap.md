@@ -30,6 +30,10 @@ Les données du circuit sont :
 
 Pour les calculs, l'incrément de temps sera de `1 [us]`. 
 
+Le courant dans la résistance est donné par : `Ir = (U - Uc)/R` 
+
+La variation de tension du condensateur pour un courant constant est donnée par : `Uc = 1/C * Ic * t` 
+
 À la fin de chaque étape, affichez :
 - le temps,
 - le courant,
