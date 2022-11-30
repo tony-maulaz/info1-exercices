@@ -1,4 +1,4 @@
-# Fonctions references 
+# Fonctions références 
 
 > **Attention :** Pour ces exercices, testez vos fonctions avec [onlinegdb](https://www.onlinegdb.com)
 
@@ -117,7 +117,7 @@ Res tri : i1=2, i2=6, i3=12
 - Sinon `val` reste inchangée.
 
 ## Ex 7
-Écrire une fonction qui cherche le plus grand multiple commun entre deux nombres.
+Écrire une fonction qui cherche le plus grand diviseur commun entre deux nombres.
 
 Le prototype de la fonction est : `bool pgmc(int val1, int val2, int* res);`
 
@@ -125,7 +125,7 @@ Utiliser les boucles `for`.
 
 Si un multiple différent de `1` existe, la fonction retourne `true` sinon `false`.
 
-La valeur du plus grand multiple serra retourné au travers du paramètre `res`.
+La valeur du plus grand multiple sera retournée au travers du paramètre `res`.
 
 ## Ex 8 
 Quel est l'affichage du programme suivant
