@@ -123,7 +123,7 @@ Le prototype de la fonction est : `bool pgmc(int val1, int val2, int* res);`
 
 Utiliser les boucles `for`.
 
-Si un multiple différent de `1` existe, la fonction retourne `true` sinon `false`.
+Si un diviseur différent de `1` existe, la fonction retourne `true` sinon `false`.
 
 La valeur du plus grand multiple sera retournée au travers du paramètre `res`.
 
