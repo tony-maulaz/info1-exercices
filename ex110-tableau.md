@@ -2,7 +2,7 @@
 
 ## Ex 1
 
-Quel est la taille des tableaux suivants et quel est la valeur du tableau
+Quel est la taille (nombre d'élements) des tableaux suivants et quel est la valeur du tableau
 
 ```c
 Exemple
