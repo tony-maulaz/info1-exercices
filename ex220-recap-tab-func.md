@@ -14,7 +14,7 @@ void print_red(const char* str){
     printf("\n");
 }
 
-// Ecrire une fonction qui compte le nombre de multiple de la variable val présent dans le tableau.
+// Ecrire une fonction qui compte le nombre de multiples de la variable val présents dans le tableau.
 int cpt_multiple(int val, int tab[], size_t size){
     return 0;
 }
@@ -33,9 +33,9 @@ bool min_pos(int tab[], size_t size, int* min, size_t* pos){
 void print_tab(int tab[], size_t size){
 }
 
-// Ecrire une fonction qui affiche une suite de nombre par incérment de 1
+// Ecrire une fonction qui affiche une suite de nombre par incrément de 1
 // il est possible d'aller dans les deux sens
-// spéarer les nombres par une virgule sauf pour le dernier
+// séparer les nombres par une virgule sauf pour le dernier
 // 1,2,3,4...
 // 10,9,8,7...
 void print_suite(int start, int end){
@@ -45,7 +45,7 @@ void print_suite(int start, int end){
 int somme(int n){
 }
 
-// Ecrire une fonction qui compte le nombre d'élement supérieur à la moyenne du tableau
+// Ecrire une fonction qui compte le nombre d'élements supérieur à la moyenne du tableau
 // et qui retourne cette moyenne dans la variable mean
 int cpt_sup_moy(int tab[], size_t size, double* mean){
 }
@@ -55,7 +55,7 @@ int main(void){
 
     int tab[] = {4, 8, 15, 16, 23, 42};
 
-    // . Complèter l'expression afin de calucler la taille du tableau tab
+    // . Complèter l'expression afin de calculer la taille du tableau tab
     const size_t size = sizeof(tab) / sizeof(tab[0]);
 
     print_blue("\nExercice 1");
