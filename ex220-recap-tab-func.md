@@ -1,3 +1,4 @@
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -106,6 +107,7 @@ int main(void){
     else
         printf("cpt_sup_moy KO\n");
 }
+```
 
 ## Solution
 le réultat dans le terminal sera :
