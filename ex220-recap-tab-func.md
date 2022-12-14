@@ -135,3 +135,107 @@ somme OK
 Exercice cpt_sup_moy
 cpt_sup_moy OK
 ```
+
+## Code des fonctions
+```C
+// Ecrire une fonction qui compte le nombre de multiple de la variable val présent dans le tableau.
+int cpt_multiple(int val, int tab[], size_t size){
+    int cpt = 0;
+    for(int i = 0; i < size; i++){
+        if(tab[i] % val == 0)
+            cpt++;
+    }
+    return cpt;
+}
+
+// Ecrire une fonction qui modifie les valeurs dans le tableau pour avoir les valeurs absolues.
+void abs_tab(int tab[], size_t size){
+    for(int i = 0; i < size; i++){
+        if(tab[i] < 0)
+            tab[i] = -tab[i];
+    }
+}
+
+// Ecrire une fonction qui retourne la plut petite valeur positive du tableau 0 exclu ainsi que sa position dans le tableau.
+// Si il n'y a pas de valeur positive, retourner false, sinon retourner true.
+bool min_pos(int tab[], size_t size, int* min, size_t* pos){
+    int min_pos = 0;
+    int min_val = 0;
+    bool found = false;
+    for(int i = 0; i < size; i++){
+        if(tab[i] > 0){
+            if(!found){
+                min_val = tab[i];
+                min_pos = i;
+                found = true;
+            }else{
+                if(tab[i] < min_val){
+                    min_val = tab[i];
+                    min_pos = i;
+                }
+            }
+        }
+    }
+    if(found == true){
+        *min = min_val;
+        *pos = min_pos;
+    }
+    return found;
+}
+
+// Ecrire une fonction qui affiche le tableau passé en paramètre.
+void print_tab(int tab[], size_t size){
+    for(int i = 0; i < size; i++){
+        printf("%d ", tab[i]);
+    }
+    printf("\n");
+}
+
+// Ecrire une fonction qui affiche une suite de nombre par incérment de 1
+// il est possible d'aller dans les deux sens
+// spéarer les nombres par une virgule sauf pour le dernier
+// 1,2,3,4...
+// 10,9,8,7...
+void print_suite(int start, int end){
+
+    int inc = 1;
+
+    if(start > end){
+        for(int i = start; i > end; i--)
+           printf("%d,", i);
+    }
+    else{
+        for(int i = start; i < end; i++)
+            printf("%d,", i);
+    }
+            
+    printf("%d", end);
+
+    printf("\n");
+}
+
+// Ecrire une fonction qui retourne la somme des entiers de 1 à n (n supérieur à 0 et n inclus)
+int somme(int n){
+    int sum = 0;
+    for(int i = 1; i <= n; i++){
+        sum += i;
+    }
+    return sum;
+}
+
+// Ecrire une fonction qui compte le nombre d'élement supérieur à la moyenne du tableau
+// et qui retourne cette moyenne dans la variable mean
+int cpt_sup_moy(int tab[], size_t size, double* mean){
+    int sum = 0;
+    for(int i = 0; i < size; i++){
+        sum += tab[i];
+    }
+    *mean = (double)sum / size;
+    int cpt = 0;
+    for(int i = 0; i < size; i++){
+        if(tab[i] > *mean)
+            cpt++;
+    }
+    return cpt;
+}
+```
