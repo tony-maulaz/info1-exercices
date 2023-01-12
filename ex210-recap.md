@@ -12,7 +12,8 @@ Quel est l'affichage de `res2` ?
 ## Q4
 Quel est l'utilité du `printf`de `res2` ?
 
-
+## Q5
+Créer une boucle qui affiche les multiple de 3 entre 25 et 42 ?
 
 ```c
 #include <stdio.h>
