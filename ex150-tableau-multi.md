@@ -1,7 +1,7 @@
 # Exercices tableaux multi-dimensionnels 
 
 ## Ex 1
-Quelle est l'affichage du programme suivant ?
+Quel est l'affichage du programme suivant ?
 
 ```c
 int tab[2][3] = {{1, 2, 3}, {4, 5, 6}};
@@ -9,7 +9,7 @@ printf("%d\n", tab[1][2]);
 ```
 
 ## Ex 2
-Quelle est l'affichage du programme suivant ?
+Quel est l'affichage du programme suivant ?
 
 ```c
 int tab[2][3] = {{1, 2, 3}, {4, 5, 6}};
@@ -23,7 +23,7 @@ for (int i = 0; i < 2; i++) {
 ## Ex 3
 Réaliser un programme pour exécuter les instructions suivantes :
 
-#### Déclarer la matrice de valeurs entières suivante :
+### 3.1) Déclarer la matrice de valeurs entières suivante :
 **Les valeurs doivent être initialisées lors de la déclaration**
 
 ```
@@ -32,10 +32,10 @@ Réaliser un programme pour exécuter les instructions suivantes :
 4 8 9 10
 ```
 
-#### Réaliser une fonction qui affiche la matrice
+### 3.2) Réaliser une fonction qui affiche la matrice
 L'affichage des nombres est fait sur 3 caractères
 
-#### Réaliser une fonction qui modifie la matrice pour mettre toutes les valeurs au carré
+### 3.3) Réaliser une fonction qui modifie la matrice pour mettre toutes les valeurs au carré
 
 Le `main` sera le suivant :
 ```c
@@ -59,7 +59,7 @@ Avec des nombres : 1 2 3 4
 Un texte de TesT!!!
 ```
 
-#### Réaliser une fonction qui affiche le tableau de chaînes de caractères avec la taille de chaque chaîne.
+### 4.1) Réaliser une fonction qui affiche le tableau de chaînes de caractères avec la taille de chaque chaîne.
 L'affichage sera le suivant :
 ```	
 0 : Bonjour (7)
@@ -68,7 +68,7 @@ L'affichage sera le suivant :
 3 : Un texte de TesT!!! (18)
 ```
 
-#### Réaliser une fonction qui transforme le tableau de chaînes de caractères en minuscules.
+### 4.2) Réaliser une fonction qui transforme le tableau de chaînes de caractères en minuscules.
 
 Le programme principal sera le suivant :
 ```c
