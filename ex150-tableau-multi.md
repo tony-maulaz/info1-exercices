@@ -33,7 +33,7 @@ Réaliser un programme pour exécuter les instructions suivantes :
 ```
 
 ### 3.2) Réaliser une fonction qui affiche la matrice
-L'affichage des nombres est fait sur 3 caractères
+L'affichage des nombres est fait sur 4 caractères
 
 ### 3.3) Réaliser une fonction qui modifie la matrice pour mettre toutes les valeurs au carré
 
